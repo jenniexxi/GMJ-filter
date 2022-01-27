@@ -1,0 +1,5 @@
+https://www.delftstack.com/ko/howto/javascript/load-json-file-in-javascript/
+
+검색어 : httprequest ajax fetch
+https://kangaroo-dev.tistory.com/8
+

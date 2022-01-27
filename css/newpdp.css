@@ -1,0 +1,3883 @@
+@charset "UTF-8";
+#footer {
+    z-index: 3;
+}
+strong {
+    font-weight: 400;
+}
+.s-tab {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    border-top: 1px solid #e7e7e8;
+    border-bottom: 1px solid #e7e7e8;
+}
+.s-tab li {
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.function-wrap .list li + li,
+.s-tab li + li {
+    border-left: 1px solid #e7e7e8;
+}
+.s-tab li a {
+    display: block;
+    height: 80px;
+    color: #b2b2b2;
+    font-size: 24px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 82px;
+    text-align: center;
+}
+.s-tab li a strong {
+    font-weight: 700;
+}
+.s-tab li a.on {
+    color: #000;
+    background: #fafafa;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .next:after,
+.j1 .sticky-menu.t-black.float .menu-wrap .next:after,
+.j1 .sticky-menu.t-black.float:before,
+.j1 .sticky-menu.t-black.t-blur:before,
+.j12 .sticky-menu .menu li a:hover:after,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .carrier-card-inner .r2020-product-card-list,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .swiper-notification,
+.r2020-product-support .support-list-wrap.tablet .support-list-item.support-2,
+.r2020-product-support .support-list-wrap.watch_audio .support-list-item.support-1,
+.r2020-product-support .support-list-wrap.watch_audio .support-list-item.support-2,
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-row-wrap.none,
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item.none,
+.r2020-spec-wrap .spec-tit-wrap .product-names-list li:last-child:after,
+.s-tab-cont,
+.specs-wrap .tab-cont,
+.stacks-list .slide-nav-t1,
+.stacks-list .slide-next-t1,
+.stacks-list .slide-prev-t1 {
+    display: none;
+}
+.j1 .pdp-acc .highlights-list li,
+.j1 .product-wrap .btnarea,
+.j2 .s-tab,
+.select-agency + .select-color {
+    margin-top: 20px;
+}
+.j2 .s-tab li a {
+    height: 58px;
+    font-size: 20px;
+    line-height: 60px;
+}
+.j1 .s-tab,
+.j1 .sticky-menu.mgt0,
+.j2 .stacks-list .product-list > li .btn-more {
+    margin-top: 0;
+}
+.j1 .s-tab li a {
+    height: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+.j1 .s-tab li a strong,
+.j1 .stacks-list .slide-nav-t1,
+.j1 .stacks-list .slide-next-t1,
+.j1 .stacks-list .slide-prev-t1,
+.j12 .sticky-menu .menu li.on a:hover:after,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-container-initialized .jps-pagination,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-container-initialized button[class^="btn-"],
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .carrier-card-inner .r2020-product-card-list.on,
+.stacks-list .product-list > li .in-box > a,
+.sticky-menu .prd-list > ul > li.prd-select .icon-select {
+    display: block;
+}
+.specs-wrap {
+    padding-top: 75px;
+}
+.product-specs .product {
+    padding-bottom: 90px;
+    text-align: center;
+}
+.product-specs .product .img {
+    padding: 65px 0 55px;
+}
+.product-specs .product .img img {
+    display: inline-block !important;
+    width: 400px;
+}
+.product-specs .product .btn-buy {
+    display: inline-block;
+    min-width: 385px;
+    height: 60px;
+    margin: 0 5px 5px;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 22px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 62px;
+    background: #000;
+}
+.j1 .pdp-kv-wrap .kv-pdp .kv-cont .desc,
+.product-specs .product .mgt {
+    margin-top: 7px;
+}
+.product-specs .specs-view .list {
+    background-color: #fafafa;
+}
+.highlights-list li .highlights-desc-list:after,
+.j1 .r2020-product-support .support-list-wrap .support-list:after,
+.product-specs .specs-view .list:after,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.product-specs .specs-view .list li {
+    float: left;
+    width: 33.3%;
+    min-height: 305px;
+    padding: 70px 2% 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    border-left: 1px solid #e7e7e8;
+    border-bottom: 1px solid #e7e7e8;
+}
+.j12 .product-support.t3 li.t1,
+.j2 .product-support ul li.t1,
+.j2 .product-support ul li.t2 {
+    border-bottom: 1px solid #323435;
+}
+.j1 .product-support ul li.t1,
+.j1 .product-support ul li.t3,
+.j2 .product-specs .specs-view .list li.t1,
+.j2 .product-specs .specs-view .list li.t3,
+.j2 .product-specs .specs-view .list li.t5,
+.product-specs .specs-view .list li.t1,
+.product-specs .specs-view .list li.t4,
+.product-support ul li.t1 {
+    border-left: 0;
+}
+.product-specs .specs-view .list li .value,
+.product-support ul li .tit {
+    display: table;
+    width: 100%;
+}
+.product-specs .specs-view .list li .value .in {
+    display: table-cell;
+    width: 100%;
+    height: 114px;
+    font-size: 26px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 38px;
+    vertical-align: middle;
+}
+.product-specs .specs-view .list li .desc {
+    display: block;
+    font-size: 16px;
+}
+.product-specs .specs-view .view-more {
+    padding: 20px 8%;
+}
+.product-specs .specs-view .view-more .btnarea {
+    text-align: center;
+}
+.product-specs .specs-view .view-more.on {
+    background: #e7e7e8;
+}
+.product-specs .specs-view .view-more.on .btnarea {
+    margin: 40px 0 5px;
+}
+#contents img,
+.product-specs .specs-view .view-more.on .btnarea .btn-more-t1 {
+    vertical-align: top;
+}
+.j1 .pdp-info-wrap,
+.j2 .specs-wrap {
+    padding-top: 35px;
+}
+.j2 .product-specs .specs-view .list li {
+    width: 50%;
+    min-height: 282px;
+    padding: 55px 2% 0;
+    border-left: 1px solid #e7e7e8;
+}
+.j2 .product-specs .specs-view .list li .desc {
+    font-size: 15px;
+}
+.j2 .product-specs .specs-view .view-more {
+    padding: 25px 30px 20px;
+}
+.j1 .specs-wrap {
+    padding-top: 20px;
+}
+.j1 .product-specs .product {
+    padding-bottom: 30px;
+}
+.j1 .product-specs .product .img {
+    padding: 45px 0 40px;
+}
+.j1 .product-specs .product .img img {
+    width: 200px;
+}
+.j1 .product-specs .product .btn-buy {
+    display: block;
+    min-width: auto;
+    height: 50px;
+    margin: 0 15px 5px;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 50px;
+}
+.j1 .product-specs .specs-view .list li {
+    float: none;
+    width: 100%;
+    min-height: 105px;
+    padding: 7px 2% 0;
+    border-left: 0;
+}
+.j1 .product-specs .specs-view .list li .value .in {
+    height: 69px;
+    font-size: 18px;
+    line-height: 23px;
+}
+.j1 .product-specs .specs-view .list li .desc {
+    font-size: 12px;
+    line-height: 18px;
+}
+.j1 .product-specs .specs-view .view-more {
+    padding: 13px 15px;
+}
+.j1 .product-specs .specs-view .view-more.on .btnarea {
+    margin: 30px 0 7px;
+}
+.highlights-list {
+    display: none;
+    margin-top: -10px;
+}
+.highlights-list li {
+    margin-top: 60px;
+}
+.highlights-list li .tit {
+    display: block;
+    font-size: 24px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.highlights-list li .stit {
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.highlights-list li .desc {
+    display: block;
+    width: 85%;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.recently-wrap .title,
+.stacks-wrap .title {
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700 !important;
+}
+.highlights-list li .tit + .desc {
+    width: 55%;
+    margin-top: 25px;
+}
+.highlights-list li .highlights-desc-list,
+.ie .shop-layer-wrap .shop-list li .shop-name img,
+.j1 .r2020-product-support .support-list-wrap.tablet .support-list-item:first-child,
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-values,
+.j1 .recently-wrap .product-list > li {
+    width: 100%;
+}
+.highlights-list li .highlights-desc-list li {
+    float: left;
+    width: 33.3%;
+    margin-top: 20px;
+}
+.highlights-list li .highlights-desc-list li:nth-child(3n + 1),
+.j1 .highlights-list li .highlights-desc-list li:nth-child(2n + 1) {
+    clear: both;
+}
+.j1 .highlights-list {
+    margin-top: -13px;
+}
+.j1 .highlights-list li {
+    margin-top: 34px;
+}
+.j1 .highlights-list li .highlights-desc-list li,
+.j1 .product-support ul li,
+.j2 .product-support ul li,
+.product-support.t2 li {
+    width: 50%;
+}
+.j1 .highlights-list li .highlights-desc-list li:nth-child(3n + 1) {
+    clear: none;
+}
+.j1 .highlights-list li .tit {
+    font-size: 16px;
+}
+.j1 .highlights-list li .stit {
+    font-size: 13px;
+}
+.j1 .highlights-list li .desc {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.j1 .highlights-list li .highlights-desc-list li,
+.j1 .highlights-list li .tit + .desc,
+.j1 .pdp-info-wrap .product-cont .select-color,
+.j1 .select-agency + .select-color,
+.j2 .product-wrap .product-list > li {
+    margin-top: 15px;
+}
+.product-support {
+    background-color: #222425;
+}
+.product-support ul {
+    display: block;
+    overflow: hidden;
+}
+.product-support ul li {
+    float: left;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #323435;
+}
+.product-support ul li a {
+    display: block;
+    height: 360px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 85px;
+    text-align: center;
+}
+.product-support ul li [class*="ico-t"] {
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+.product-support ul li .ico-t1 {
+    background-image: url(/common/images/pdp/ico_support1.png);
+}
+.product-support ul li .ico-t2 {
+    background-image: url(/common/images/pdp/ico_support2.png);
+}
+.product-support ul li .ico-t3 {
+    background-image: url(/common/images/pdp/ico_support3.png);
+}
+.product-support ul li .ico-t4 {
+    background-image: url(/common/images/pdp/ico_support4.png);
+}
+.ie8 .product-support ul li .ico-t1 {
+    background-image: url(/common/images/pdp/ico_ie8_support1.png);
+}
+.ie8 .product-support ul li .ico-t2 {
+    background-image: url(/common/images/pdp/ico_ie8_support2.png);
+}
+.ie8 .product-support ul li .ico-t3 {
+    background-image: url(/common/images/pdp/ico_ie8_support3.png);
+}
+.ie8 .product-support ul li .ico-t4 {
+    background-image: url(/common/images/pdp/ico_ie8_support4.png);
+}
+.product-support ul li .tit span {
+    display: table-cell;
+    height: 110px;
+    color: #fff;
+    font-size: 22px;
+    vertical-align: middle;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+.j2 .product-support ul li.t2,
+.j2 .product-support ul li.t4,
+.product-support.t3 li.t3 {
+    border-right: 0;
+}
+.j2 .product-support ul li a {
+    height: 290px;
+    padding-top: 53px;
+}
+.j2 .product-support ul li .tit span {
+    height: 78px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.j1 .product-support ul li.t3,
+.j1 .product-support ul li.t4 {
+    border-top: 1px solid #323435;
+}
+.j1 .product-support ul li a {
+    height: 180px;
+    padding-top: 33px;
+}
+.j1 .product-support ul li [class*="ico-t"] {
+    width: 64px;
+    height: 64px;
+}
+.j1 .product-support ul li .tit span {
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.product-support.t3 li {
+    width: 33.3%;
+}
+.product-support.t3 li.t2 {
+    border-right: 1px solid #323435;
+}
+.j12 .product-support.t3 li.t1 {
+    width: 100%;
+    border-right: 0;
+}
+.j12 .product-support.t3 li.t2 {
+    border-bottom: 0;
+    border-right: 1px solid #323435;
+}
+.stacks-wrap {
+    padding-top: 80px;
+}
+.stacks-wrap .title {
+    font-size: 30px;
+    text-align: center;
+}
+.stacks-list {
+    position: relative;
+    margin-top: 60px;
+}
+.stacks-list .product-list > li {
+    padding: 0 12px;
+}
+.stacks-list .product-list > li .in-box {
+    padding: 20px 9% 80px;
+}
+.stacks-list .product-list > li:nth-child(2) .in-box,
+.sticky-menu .prd-list > ul > li > a:focus,
+.sticky-menu .prd-list > ul > li > a:hover {
+    background-color: #f7f7f7;
+}
+.stacks-list .product-list > li .info {
+    margin-top: 50px;
+    border-bottom: 1px solid #dedede;
+}
+.stacks-list .product-list > li .info > li {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    border-top: 1px solid #dedede;
+}
+.stacks-list .product-list > li .info > li > .tit {
+    float: left;
+    display: table;
+    width: 50%;
+    font-size: 14px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.stacks-list .product-list > li .info > li > .tit > span {
+    display: table-cell;
+    width: 100%;
+    height: 70px;
+    vertical-align: middle;
+}
+.stacks-list .product-list > li .info > li > .value {
+    float: right;
+    width: 46%;
+    font-size: 14px;
+    text-align: left;
+}
+.stacks-list .product-list > li .info > li > .value.ico {
+    padding-top: 14px;
+    text-align: center;
+}
+.stacks-list .product-list > li .info > li > .value.ico [class*="ico-spec-"] {
+    width: 38px;
+    height: 43px;
+}
+.stacks-list .product-list > li .info > li > .value > span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    letter-spacing: 0;
+    line-height: 70px;
+}
+.stacks-list .product-list > li .btn-more {
+    display: block;
+    height: 50px;
+    margin-top: 40px;
+    line-height: 50px;
+    border: 1px solid #1a1a1a;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.j1 .stacks-list .product-list > li .info > li,
+.j1 .stacks-list .product-list > li .info > li > .tit > span {
+    height: 58px;
+}
+.stacks-list .product-list > li .btn-more:hover {
+    color: #fff;
+    background-color: #000;
+}
+.j2 .stacks-wrap {
+    padding-top: 70px;
+}
+.j2 .recently-wrap .title,
+.j2 .stacks-wrap .title {
+    font-size: 24px;
+}
+.j2 .stacks-list {
+    margin-top: 30px;
+}
+.j2 .stacks-list .product-list > li .in-box {
+    padding: 30px 7% 60px;
+}
+.j1 .product-wrap .product-list > li.last,
+.j1 .product-wrap .product-list > li:last-child,
+.j2 .stacks-list .product-list > li .info {
+    border-bottom: 0;
+}
+.j1 .stacks-wrap {
+    padding: 50px 30px 0;
+}
+.j1 .recently-wrap .title,
+.j1 .stacks-wrap .title {
+    font-size: 21px;
+}
+.j1 .stacks-list .product-list > li .info > li > .tit,
+.j1 .stacks-list .product-list > li .info > li > .value {
+    font-size: 12px;
+}
+.j1 .stacks-list {
+    margin-top: 30px;
+    padding-bottom: 90px;
+}
+.j1 .stacks-list .product-list {
+    position: relative;
+    width: 300%;
+}
+.j1 .stacks-list .product-list > li {
+    padding: 0 5px;
+}
+.j1 .stacks-list .product-list > li .in-box {
+    padding: 15px 10%;
+    background-color: #f7f7f7;
+}
+.j1 .stacks-list .product-list > li figure {
+    max-width: 100%;
+}
+.j1 .stacks-list .product-list > li .info {
+    margin-top: 40px;
+}
+.j1 .stacks-list .product-list > li .info > li > .value.ico {
+    padding-top: 8px;
+}
+.j1 .stacks-list .product-list > li .info > li > .value.ico [class*="ico-spec-"] {
+    width: 33px;
+}
+.j1 .stacks-list .product-list > li .info > li > .value > span {
+    line-height: 58px;
+}
+.j1 .stacks-list .product-list > li .btn-more {
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+}
+@media screen and (max-width: 340px) {
+    .j1 .stacks-list .product-list > li .in-box {
+        padding: 15px 7%;
+    }
+}
+.sticky-menu,
+.sticky-menu .inner {
+    height: 65px;
+    position: relative;
+}
+.recently-wrap {
+    padding: 75px 0 40px !important;
+    background-color: #fafafa;
+}
+.recently-wrap .title {
+    padding: 0 !important;
+    font-size: 30px;
+    text-align: center;
+}
+.recently-wrap .slide-wrap-t2 {
+    padding: 30px 12% 100px;
+}
+.j1 .recently-wrap .product-list > li a,
+.recently-wrap .product-list > li a {
+    padding: 0 1.2%;
+}
+.recently-wrap .product-list > li a figure {
+    max-width: 192px;
+    margin: 24px auto 32px;
+}
+.recently-wrap .slide-next-t1,
+.recently-wrap .slide-prev-t1 {
+    top: 40%;
+}
+.j2 .recently-wrap {
+    padding: 75px 0 30px !important;
+}
+.j2 .recently-wrap .slide-wrap-t2 {
+    padding: 55px 2% 80px;
+}
+.j1 .recently-wrap {
+    padding: 40px 0 0 !important;
+    background-color: #fafafa;
+}
+.j1 .recently-wrap .slide-wrap-t2 {
+    padding: 0 10% 80px;
+}
+.notice-wrap {
+    padding: 3% 2%;
+    background: #e7e7e8;
+}
+.notice-wrap .txt {
+    font-size: 12px;
+    line-height: 22px;
+}
+.notice-wrap .txt.t2 li {
+    padding-left: 14px;
+    text-indent: -14px;
+}
+.notice-wrap .txt + .txt {
+    padding-top: 1%;
+}
+.notice-wrap .txt a {
+    color: #0268dc;
+}
+.j1 .notice-wrap,
+.j2 .notice-wrap {
+    padding: 5% 2.5%;
+}
+.j2 .notice-wrap .txt {
+    font-size: 14px;
+    line-height: 22px;
+}
+.j2 .notice-wrap .txt.t2 li {
+    padding-left: 16px;
+    text-indent: -16px;
+}
+.j1 .notice-wrap .txt,
+.pdp-txt1,
+.pdp-txt2 {
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.j1 .notice-wrap .txt + .txt {
+    padding-top: 2%;
+}
+.mgt0,
+.stacks-list .product-list > li .info,
+.sticky-menu.t-top {
+    margin-top: 0 !important;
+}
+.sticky-menu .inner {
+    z-index: 29;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    background: rgba(255, 255, 255, 0.95);
+}
+.sticky-menu .wid-box {
+    position: relative;
+    max-width: 1440px;
+    height: 64px;
+    margin: 0 auto;
+}
+.sticky-menu .heading {
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+.sticky-menu .heading .in {
+    display: table-cell;
+    width: 100%;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px 0 0 15px;
+    font-size: 14px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+.sticky-menu .menu-wrap {
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    margin: 0 190px 0 20px;
+}
+.sticky-menu .menu {
+    position: relative;
+    width: 1000%;
+}
+.sticky-menu .menu li {
+    display: inline-block;
+    vertical-align: top;
+}
+.sticky-menu .menu li a {
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    color: #737373;
+    font-size: 16px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 64px;
+}
+.sticky-menu .menu li a.on {
+    color: #000;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.sticky-menu .menu .tab-bar {
+    top: 61px;
+}
+.sticky-menu .btn-gnb- {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.sticky-menu .btn-buy {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 160px;
+    height: 64px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    background: #000;
+    -webkit-transition: 0.45s;
+    -o-transition: 0.45s;
+    transition: 0.45s;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+}
+.sticky-menu .btn-buy.on,
+.sticky-menu.t-black .btn-buy.on {
+    background: #6a6a6e;
+}
+.sticky-menu .buy-list {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 160px;
+    background: #fff;
+}
+.sticky-menu .buy-list li {
+    text-align: center;
+    border: solid #dadada;
+    border-width: 0 1px 1px;
+}
+.sticky-menu .buy-list li a {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+}
+.sticky-menu.float {
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.sticky-menu.float .inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.sticky-menu.black-type .tab-bar {
+    height: 3px;
+    background: #0078c8;
+}
+.sticky-menu.black-type .inner {
+    background: #16191a;
+    border-bottom: none;
+}
+.sticky-menu.black-type,
+.sticky-menu.black-type .inner {
+    height: 64px;
+}
+.sticky-menu.black-type .menu li a {
+    color: #aaa;
+}
+.j1 .sticky-menu.black-type .heading .in,
+.r2020-sticky-menu.black .r2020-menu-wrap .menu-wrap .menu li a,
+.sticky-menu .heading.c-white .prd-name,
+.sticky-menu.black-type .menu li a.on,
+.sticky-menu.t-black .menu li a.on {
+    color: #fff;
+}
+.sticky-menu.black-type .btn-buy {
+    background: #0078c8;
+}
+.j1 .sticky-menu.black-type {
+    min-height: 100px;
+    background: #000;
+}
+.j1 .sticky-menu.black-type .inner {
+    background: rgba(255, 255, 255, 0);
+}
+.j1 .sticky-menu.black-type.float .inner {
+    background: #202426;
+}
+.j1 .sticky-menu.black-type:after,
+.j1 .sticky-menu.t-black:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background: #16191a;
+}
+.j1 .sticky-menu.black-type .menu-wrap {
+    background: #16191a;
+}
+.j1 .sticky-menu.black-type .btn-buy,
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-row-wrap:last-child {
+    border: none;
+}
+.j1 .sticky-menu.black-type.float .menu-wrap,
+.j1 .sticky-menu.t-black.m-top:before {
+    border-top: 1px solid #333;
+}
+.j12 .sticky-menu .inner {
+    z-index: 800;
+}
+.j12 .sticky-menu .menu-wrap .next {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 66px;
+    width: 40px;
+    background: url(/common/images/bg_sticky_sidemask.png) 0 50% no-repeat;
+}
+.j2 .r2020-sticky-menu.no-menu,
+.j2 .sticky-menu {
+    height: 68px;
+}
+.j2 .sticky-menu .wid-box,
+.j2 .sticky-menu.black-type {
+    height: 66px;
+}
+.j2 .sticky-menu .inner {
+    height: 68px;
+    border-bottom: 2px solid #000;
+}
+.j2 .sticky-menu.black-type .inner {
+    height: 66px;
+    border-bottom: none;
+}
+.j2 .sticky-menu .menu-wrap {
+    padding-right: 20px;
+}
+.j2 .sticky-menu .menu li + li {
+    margin-left: 35px;
+}
+.j2 .sticky-menu .menu li a {
+    padding: 0;
+    font-size: 16px;
+    line-height: 66px;
+}
+.j2 .sticky-menu .menu .tab-bar {
+    top: 64px;
+}
+.j2 .sticky-menu .btn-buy {
+    right: 0;
+    width: 190px;
+    height: 66px;
+    font-size: 18px;
+    line-height: 66px;
+}
+.j2 .sticky-menu .buy-list {
+    top: 68px;
+    right: 0;
+    width: 190px;
+}
+.j1 .sticky-menu {
+    height: auto;
+    min-height: 104px;
+    padding: 15px 15px 0;
+}
+.j1 .sticky-menu .inner {
+    height: auto;
+    background: rgba(255, 255, 255, 0);
+}
+.j1 .sticky-menu .wid-box {
+    height: auto;
+    padding-top: 50px;
+}
+.j1 .sticky-menu .menu-wrap {
+    height: 50px;
+    margin: 15px 0 0;
+}
+.j1 .sticky-menu.float,
+.j1 .sticky-menu.t-black + section {
+    padding-top: 0;
+}
+.j1 .sticky-menu .menu-wrap .next {
+    width: 25px;
+    height: 50px;
+    background: url(/common/images/tab_mask.png) no-repeat;
+    background-size: 100% 50px;
+}
+.j1 .sticky-menu .menu li + li {
+    margin-left: 5px;
+}
+.j1 .sticky-menu .menu li a {
+    padding: 0 2px;
+    font-size: 14px;
+    line-height: 50px;
+}
+.j1 .sticky-menu .menu .tab-bar {
+    top: 47px;
+}
+.j1 .sticky-menu .bar {
+    height: 2px;
+}
+.j1 .sticky-menu .btn-buy {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid #737373;
+}
+.j1 .sticky-menu .buy-list {
+    position: static;
+    width: auto;
+}
+.j1 .sticky-menu .buy-list li a,
+.j1 .sticky-menu.t-black .buy-list li a {
+    height: 50px;
+    line-height: 50px;
+}
+.j1 .sticky-menu.black-type [class*="btn-gnb-"] [class*="line"],
+.j1 .sticky-menu.float .inner,
+.j1 .sticky-menu.t-white-new.m-top.float,
+.j1 .sticky-menu.t-white-new.m-top.float .inner,
+.j1 .sticky-menu.t-white-new.m-top.float .menu-wrap,
+.sticky-menu.t-black.t-blur .menu .tab-bar {
+    background: #fff;
+}
+.j1 .sticky-menu.float .heading {
+    opacity: 1;
+    left: 0;
+    right: 158px;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+}
+.j1 .sticky-menu.float .menu-wrap {
+    margin-top: 0;
+    padding-left: 15px;
+    border-top: 1px solid #f5f5f5;
+}
+.j1 .sticky-menu.float .menu-wrap .next {
+    margin-right: 15px;
+}
+.j1 .sticky-menu.float .menu-wrap .next:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    width: 15px;
+    height: 100%;
+    background: #fff;
+}
+.j1 .sticky-menu.float .btn-gnb- {
+    display: block;
+    right: 0;
+    -webkit-transition: 0.55s;
+    -o-transition: 0.55s;
+    transition: 0.55s;
+}
+.j1 .sticky-menu.float .btn-buy {
+    position: absolute;
+    left: auto;
+    right: 50px;
+    width: 108px;
+    font-size: 14px;
+    line-height: 48px;
+    border: 0;
+    -webkit-transition: 0.45s;
+    -o-transition: 0.45s;
+    transition: 0.45s;
+}
+.j1 .sticky-menu.float .buy-list {
+    padding: 0;
+    border-top: 1px solid #f5f5f5;
+}
+.j1 .sticky-menu.float .buy-list li {
+    border: 0;
+}
+.j1 .sticky-menu.float .buy-list li + li,
+.product-wrap .product-list,
+.support-products {
+    border-top: 1px solid #f1f1f1;
+}
+.ie8 .sticky-menu .inner {
+    background: #fff;
+    opacity: 0.95;
+}
+.ie8 .sticky-menu .menu,
+.pdp-kv-wrap,
+.r2020-pdp-inner-wrap .r2020-pdp-inner {
+    overflow: hidden;
+}
+.ie8 .sticky-menu .menu li {
+    float: left;
+}
+.sticky-menu.t-black {
+    z-index: 800;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 84px;
+}
+.sticky-menu.t-black .inner {
+    height: 84px;
+    border-bottom: 0;
+    background: url(/common/images/pdp/bg_sticky_black.png) repeat-x #202426;
+}
+.sticky-menu.t-black .inner .wid-box {
+    height: 35px;
+    padding-top: 49px;
+}
+.sticky-menu.t-black .heading .in .bar {
+    margin: 0 3px;
+    font-family: vedana;
+}
+.sticky-menu.t-black .btn-buy {
+    border: 0;
+    background: #0075c9;
+    line-height: 50px;
+}
+.sticky-menu.t-black .buy-list {
+    z-index: 3;
+    background: #fff;
+}
+.sticky-menu.t-black .buy-list li {
+    border-top: 0;
+}
+.sticky-menu.t-black .buy-list li:last-child {
+    border-bottom: 1px solid #dadada;
+}
+.sticky-menu.t-black .buy-list li + li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+.sticky-menu.t-black .buy-list li a {
+    height: 44px;
+    line-height: 44px;
+}
+.sticky-menu.t-black .buy-list li.stit {
+    height: 35px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 36px;
+    background: #191c1e;
+}
+.sticky-menu.t-black .menu-wrap {
+    margin: 0 0 0 15px;
+}
+.sticky-menu.t-black .menu li a {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 35px;
+}
+.sticky-menu.t-black .menu .tab-bar {
+    top: auto;
+    bottom: 0;
+    background: #0075c9;
+    height: 3px;
+}
+.sticky-menu.t-black.float {
+    position: fixed !important;
+    top: 0;
+    background: 0 0 !important;
+}
+.j2 .sticky-menu.t-black .heading,
+.j3 .sticky-menu.t-black .heading {
+    opacity: 1;
+    left: 0;
+}
+.j2 .sticky-menu.t-black .heading .in,
+.j3 .sticky-menu.t-black .heading .in {
+    padding: 0 30px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 49px;
+}
+.j2 .sticky-menu.t-black .btn-buy,
+.j3 .sticky-menu.t-black .btn-buy {
+    width: 146px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 49px;
+}
+.j2 .sticky-menu.t-black .buy-list,
+.j3 .sticky-menu.t-black .buy-list {
+    top: 49px;
+    width: 146px;
+}
+.j2 .sticky-menu.t-black .menu-wrap {
+    margin-left: 30px;
+}
+.j1 .sticky-menu.t-black.m-top .menu-wrap,
+.jt .sticky-menu.t-black .heading .in {
+    padding-left: 15px;
+}
+.jt .sticky-menu.t-black .menu-wrap {
+    margin-left: 15px;
+}
+.j1 .sticky-menu.t-black {
+    position: relative;
+    top: auto;
+    min-height: 115px;
+    margin-top: 0;
+    background: #000;
+}
+.j1 .sticky-menu.t-black .inner {
+    height: 115px;
+    background: 0 0;
+}
+.j1 .sticky-menu.t-black .wid-box {
+    height: 50px;
+    padding-top: 65px;
+}
+.j1 .sticky-menu.t-black .heading .in {
+    color: #fff;
+    font-size: 16px;
+}
+.j1 .sticky-menu.t-black [class*="btn-gnb-"] [class*="line"],
+.r2020-sticky-menu.black .r2020-menu-wrap .btn-gnb- [class*="line"],
+.r2020-sticky-menu.black .r2020-menu-wrap .menu-wrap .tab-bar,
+.r2020-sticky-menu.white {
+    background-color: #fff;
+}
+.j1 .sticky-menu.t-black .buy-list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.j1 .sticky-menu.t-black .buy-list li.stit {
+    height: 39px;
+    font-size: 14px;
+    line-height: 41px;
+}
+.j1 .sticky-menu.t-black .menu-wrap {
+    height: 50px;
+    margin: 0;
+}
+.j1 .sticky-menu.t-black .menu li a {
+    line-height: 50px;
+}
+.j12 .sticky-menu.t-black .menu-wrap .next {
+    height: 35px;
+    width: 35px;
+    background: url(/common/images/tab_mask_black.png) 50% 50% no-repeat;
+    background-size: 35px 35px;
+}
+.j1 .sticky-menu.t-black .menu-wrap .next {
+    width: 46px;
+    height: 50px;
+    background-image: url(/common/images/tab_mask_black.png);
+    background-position: 15px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 50px;
+}
+.j1 .sticky-menu.t-black.float {
+    top: 0;
+    height: auto;
+    min-height: 101px;
+    padding-top: 0;
+}
+.j1 .sticky-menu.t-black.float .inner {
+    height: 100px;
+    background: #202426;
+}
+.j1 .sticky-menu.t-black.float .wid-box,
+.j1 .sticky-menu.t-black.m-top .wid-box {
+    padding-top: 50px;
+}
+.j1 .sticky-menu.t-black.float .buy-list {
+    position: relative;
+    top: 0;
+    padding: 0;
+    border-top: 1px solid #1a1e1f;
+    background: #fff;
+}
+.j1 .sticky-menu.t-black.float .menu-wrap {
+    border-top: 1px solid #333;
+    background: #16191a;
+}
+.j1 .sticky-menu.t-black.float .menu-wrap .next {
+    margin-right: 0;
+    background-position: 0 0;
+}
+.pdp-info-wrap {
+    position: relative;
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.pdp-info-wrap .product-cont {
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 49%;
+    bottom: 0;
+    overflow: hidden;
+}
+.pdp-info-wrap .product-cont .in-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+.pdp-info-wrap .product-cont .in-in-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.pdp-info-wrap .product-cont .product-name {
+    font-size: 52px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.pdp-info-wrap .product-cont .product-name span {
+    font-size: 44px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.pdp-info-wrap .product-cont .product-name .product-marvel-name {
+    font-size: 52px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.pdp-info-wrap .product-cont .select-color {
+    overflow: hidden;
+    margin-top: 35px;
+    padding-top: 1px;
+}
+.pdp-info-wrap .product-cont .select-color [class*="color-"] {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 6px;
+    text-indent: -9999px;
+    border: 1px solid #6a6a6a;
+}
+.pdp-info-wrap .product-cont .select-color [class*="color-"].on {
+    border: 2px solid #000;
+}
+.pdp-info-wrap .product-cont .select-color [class*="color-black"].on {
+    border: 2px solid #6a6a6a;
+}
+.pdp-info-wrap .product-cont .select-color .color-rubywine {
+    background-color: #653038;
+}
+.pdp-info-wrap .product-cont .select-color .color-red {
+    background-color: #fb0b0c;
+}
+.pdp-info-wrap .product-cont .select-color .color-pink {
+    background-color: #ffc6f4;
+}
+.pdp-info-wrap .product-cont .select-color .color-orange {
+    background-color: #f6990d;
+}
+.pdp-info-wrap .product-cont .select-color .color-yellow {
+    background-color: #ffec14;
+}
+.pdp-info-wrap .product-cont .select-color .color-black {
+    background-color: #0f0f0f;
+}
+.pdp-info-wrap .product-cont .select-color .color-silver {
+    background-color: #dbdbdb;
+}
+.pdp-info-wrap .product-cont .select-color .color-gold {
+    background-color: #e1dec4;
+}
+.pdp-info-wrap .product-cont .select-color .color-pinkgold {
+    background-color: #fcd4d4;
+}
+.pdp-info-wrap .product-cont .select-color .color-pakistangreen {
+    background-color: #036423;
+}
+.pdp-info-wrap .product-cont .select-color .color-lightblue {
+    background-color: #87b1fd;
+}
+.pdp-info-wrap .product-cont .select-color .color-blue {
+    background-color: #0f5eb9;
+}
+.pdp-info-wrap .product-cont .select-color .color-dukeblue {
+    background-color: #1c0d82;
+}
+.pdp-info-wrap .product-cont .select-color .color-bluearctic {
+    background-color: #0a3369;
+}
+.pdp-info-wrap .product-cont .select-color .color-brown {
+    background-color: #865101;
+}
+.pdp-info-wrap .product-cont .select-color .color-umber {
+    background-color: #5f4b41;
+}
+.pdp-info-wrap .product-cont .select-color .color-gray {
+    background-color: #777;
+}
+.pdp-info-wrap .product-cont .select-color .color-white {
+    background-color: #f2f2f2;
+}
+.pdp-info-wrap .product-cont .select-color .color-violet {
+    background-color: #7205a7;
+}
+.pdp-info-wrap .product-cont .select-color .color-phonebox {
+    background-color: #521221;
+}
+.pdp-info-wrap .product-cont .select-color .color-rose {
+    background-color: #d89084;
+}
+.pdp-info-wrap .product-cont .select-color .color-navy {
+    background-color: #0c2d5e;
+}
+.pdp-info-wrap .product-cont .select-color .color-whitebeige {
+    background-color: #d2c6b0;
+}
+.pdp-info-wrap .product-cont .select-color .color-spiderman {
+    background-color: #941e2e;
+}
+.pdp-info-wrap .product-cont .select-color .color-ironman {
+    background-color: #aa0201;
+}
+.pdp-info-wrap .product-cont .select-color .color-skyblue {
+    background-color: #a4c8e1;
+}
+.pdp-info-wrap .product-cont .select-color .color-glamlavender {
+    background-color: #decde7;
+}
+.pdp-info-wrap .product-cont .select-color .color-lightgray {
+    background-color: #d3d3d3;
+}
+.pdp-info-wrap .product-img {
+    float: right;
+    width: 49%;
+    padding: 70px 0 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pdp-info-wrap .product-img .img-preview,
+.product-wrap .btnarea {
+    margin-top: 40px;
+    text-align: center;
+}
+.pdp-info-wrap .product-img .img-preview > span {
+    display: inline-block;
+    margin: 0 4px;
+    vertical-align: top;
+}
+.pdp-info-wrap .product-img .img-preview > span a {
+    display: table-cell;
+    width: 66px;
+    height: 66px;
+    vertical-align: middle;
+    border: 2px solid #f1f1f1;
+}
+.j1 .select-agency a.on,
+.pdp-info-wrap .product-img .img-preview > span a.on,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a:focus:before,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a:hover:before,
+.select-agency a.on {
+    border-color: #000;
+}
+.pdp-info-wrap .product-img .img-preview > span a > img {
+    width: 66px;
+}
+.pdp-info-wrap .product-img .slide-wrap-t2 {
+    padding: 0 6.5%;
+}
+.j2 .pdp-info-wrap .product-img .slide-next-t3,
+.j2 .pdp-info-wrap .product-img .slide-prev-t3,
+.j3 .pdp-info-wrap .product-img .slide-next-t3,
+.j3 .pdp-info-wrap .product-img .slide-prev-t3 {
+    opacity: 1 !important;
+}
+.j2 .pdp-info-wrap .product-cont .select-color [class*="color-"] {
+    width: 38px;
+    height: 38px;
+}
+.j1 .pdp-kv-wrap .kv-tab .kv-cont .title,
+.j2 .pdp-info-wrap .product-cont .product-name,
+.j2 .pdp-info-wrap .product-cont .product-name .product-marvel-name {
+    font-size: 40px;
+}
+.j2 .pdp-info-wrap .product-cont .product-name span {
+    font-size: 34px;
+}
+.j2 .pdp-info-wrap .product-img .img-preview,
+.product-wrap .product-list > li {
+    margin-top: 25px;
+}
+.j2 .pdp-info-wrap .product-img .img-preview > span a {
+    width: 45px;
+    height: 45px;
+}
+.j2 .pdp-info-wrap .product-img .img-preview > span a > img {
+    width: 45px;
+}
+.j1 .pdp-info-wrap .product-cont {
+    position: static;
+    text-align: center;
+}
+.j1 .pdp-info-wrap .product-cont .in-box {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.j1 .pdp-info-wrap .product-cont .in-in-box {
+    position: static;
+    padding-bottom: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.j1 .pdp-info-wrap .product-cont .product-name {
+    padding: 0 2%;
+    font-size: 23px;
+}
+.j1 .pdp-info-wrap .product-cont .product-name span {
+    font-size: 19px;
+}
+.j1 .pdp-info-wrap .product-cont .product-name .product-marvel-name {
+    font-size: 23px;
+}
+.j1 .pdp-info-wrap .product-cont .select-color [class*="color-"] {
+    width: 24px;
+    height: 24px;
+}
+.j1 .pdp-info-wrap .product-img {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+}
+.j1 .product-list > li a figure img {
+    max-width: 300px;
+}
+.j1 .pdp-info-wrap .product-img .img-preview {
+    margin: 30px 0 15px;
+}
+.j1 .pdp-info-wrap .product-img .img-preview > span {
+    margin: 0 0.833vw;
+}
+.j1 .pdp-info-wrap .product-img .img-preview > span a {
+    width: 44px;
+    height: 44px;
+    border-width: 1px;
+}
+.j1 .pdp-info-wrap .product-img .img-preview > span a > img {
+    width: 44px;
+}
+.j1 .pdp-acc .sticky-menu.v-nbuy.float .heading {
+    right: 55px;
+}
+.pdp-acc .pdp-acc-title {
+    margin: 75px 8% 15px;
+    font-size: 30px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.pdp-acc .specs-wrap {
+    padding-top: 1px;
+}
+.pdp-acc .highlights-list {
+    display: block;
+    margin-top: 0;
+    padding: 5px 8% 75px;
+    background: #e7e7e8;
+}
+.j2 .pdp-acc .pdp-acc-title {
+    margin: 50px 30px 10px;
+    font-size: 20px;
+}
+.j2 .pdp-acc .highlights-list {
+    padding: 5px 30px 75px;
+}
+.j2 .pdp-acc .highlights-list li .tit {
+    font-size: 20px;
+}
+.j1 .pdp-acc .pdp-acc-title {
+    margin: 30px 15px 7px;
+    font-size: 21px;
+}
+.j1 .pdp-acc .highlights-list {
+    padding: 5px 15px 45px;
+}
+@media screen and (min-width: 1440px) {
+    .pdp-info-wrap a[class*="slide-prev-t"] {
+        left: 1.3%;
+        margin-left: 0;
+    }
+    .pdp-info-wrap a[class*="slide-next-t"] {
+        right: 1.3%;
+        margin-right: 0;
+    }
+}
+.function-wrap .list {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    background: #fafafa;
+}
+.function-wrap .list li {
+    display: table-cell;
+    width: 33.3%;
+    height: 120px;
+    padding: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.function-wrap .list.t2 li,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product .recommended-product-area .r2020-product-card {
+    width: 25%;
+}
+.j2 .function-wrap .list li {
+    height: 80px;
+    font-size: 16px;
+}
+.j1 .function-wrap .list {
+    display: block;
+    width: 100%;
+    background: #fff;
+}
+.j1 .function-wrap .list li {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    padding: 3% 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #fafafa;
+}
+.j1 .function-wrap .list li + li {
+    margin-top: 10px;
+    border-left: 0;
+}
+.product-wrap {
+    position: relative;
+    padding: 0 8% 100px;
+    overflow: hidden;
+}
+.j2 .product-wrap {
+    padding: 0 30px 60px;
+}
+.j2 .product-wrap .btnarea {
+    margin-top: 35px;
+}
+.j2 .product-wrap .product-list > li a figure {
+    max-width: 300px;
+    padding-bottom: 10px;
+}
+.j1 .product-wrap {
+    padding: 0 15px 20px;
+}
+.j1 .product-wrap .product-list > li {
+    width: 100%;
+    margin-top: 0;
+    padding: 25px 1% 42px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.j1 .product-wrap .product-list > li a figure {
+    max-width: 240px;
+    padding-bottom: 0;
+}
+#contents,
+.pdp-cont-wrap {
+    max-width: 1920px;
+}
+.shop-layer-wrap {
+    width: 500px;
+    overflow: hidden;
+    margin-left: -250px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.shop-layer-wrap .pop-title {
+    font-size: 26px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    line-height: 94px;
+    text-align: center;
+}
+.shop-layer-wrap .pop-cont {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+}
+.shop-layer-wrap .shop-list {
+    position: relative;
+    padding: 0 34px;
+}
+.shop-layer-wrap .shop-list li {
+    position: relative;
+    height: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 9px 140px 9px 10px;
+    border: 1px solid #f0f0f0;
+}
+.shop-layer-wrap .shop-list li .shop-name {
+    float: left;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 22px;
+}
+.shop-layer-wrap .shop-list li .shop-name img {
+    height: 100%;
+}
+.shop-layer-wrap .shop-list li .sort {
+    float: right;
+    font-size: 14px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+}
+.shop-layer-wrap .shop-list li .btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.shop-layer-wrap .shop-list li .btn a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+}
+.pdp-title,
+.pdp-txt1 {
+    color: #000 !important;
+}
+.j12 .shop-layer-wrap {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    padding-bottom: 15px;
+}
+.j1 .shop-layer-wrap .pop-title {
+    font-size: 21px;
+    line-height: 70px;
+}
+.j1 .shop-layer-wrap .shop-list {
+    position: relative;
+    padding: 0 15px;
+}
+.j1 .shop-layer-wrap .shop-list li {
+    height: 50px;
+    padding: 9px 110px 9px 10px;
+}
+.pdp-sub-txt1,
+.pdp-txt1 {
+    padding-top: 0 !important;
+}
+.j1 .shop-layer-wrap .shop-list li .shop-name {
+    height: 16px;
+}
+.j1 .shop-layer-wrap .shop-list li .sort {
+    font-size: 11px;
+    line-height: 30px;
+}
+.j1 .shop-layer-wrap .shop-list li .btn a {
+    width: 88px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+}
+@media screen and (max-width: 360px) {
+    .j1 .shop-layer-wrap .shop-list li {
+        padding: 9px 92px 9px 5px;
+    }
+    .j1 .shop-layer-wrap .shop-list li .shop-name {
+        left: 5px;
+        height: 14px;
+    }
+    .j1 .shop-layer-wrap .shop-list li .btn {
+        right: 5px;
+    }
+    .j1 .shop-layer-wrap .shop-list li .btn a {
+        width: 82px;
+        font-size: 11px;
+    }
+}
+.pdp-kv-wrap .kv-tab,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-img-wrap,
+.sticky-menu .prd-list > ul > li {
+    position: relative;
+}
+.pdp-kv-wrap .kv-tab .kv-img img {
+    width: 100%;
+    vertical-align: top;
+}
+.pdp-kv-wrap .kv-tab .kv-cont {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+.pdp-kv-wrap .kv-pdp .kv-cont .title,
+.pdp-kv-wrap .kv-tab .kv-cont .title {
+    font-size: 72px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.pdp-kv-wrap .kv-pdp .kv-cont .title.t2,
+.pdp-kv-wrap .kv-tab .kv-cont .title.t2 {
+    font-size: 96px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.pdp-kv-wrap .kv-tab .kv-cont .desc {
+    margin: 20px 0 0 5px;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.j2 .pdp-kv-wrap .kv-tab .kv-cont {
+    left: 5%;
+}
+.j2 .pdp-kv-wrap .kv-tab .kv-cont .title {
+    font-size: 56px;
+}
+.j1 .pdp-kv-wrap .kv-tab .kv-cont {
+    top: auto;
+    bottom: 17%;
+    left: 2%;
+    right: 2%;
+    text-align: center;
+}
+.j1 .pdp-kv-wrap .kv-tab .kv-cont .desc {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.pdp-kv-wrap .kv-pdp {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+.pdp-kv-wrap .kv-pdp .kv-img {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    text-align: center;
+}
+.pdp-kv-wrap .kv-pdp .kv-img img {
+    height: 800px;
+    vertical-align: top;
+}
+.pdp-kv-wrap .kv-pdp .kv-cont {
+    z-index: 3;
+    position: absolute;
+}
+.pdp-kv-wrap .kv-pdp .kv-cont .desc {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.pdp-cont-wrap,
+.pdp-inner {
+    overflow: hidden;
+    margin: 0 auto !important;
+}
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .pdp-kv-wrap .kv-pdp,
+    .pdp-kv-wrap .kv-pdp .kv-img img {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .pdp-kv-wrap .kv-pdp,
+    .pdp-kv-wrap .kv-pdp .kv-img img {
+        height: 800px;
+    }
+}
+#contents {
+    overflow: hidden;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+.if_img,
+.if_text,
+.mod-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pdp-inner {
+    position: relative;
+    max-width: 1440px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.pdp-kv-title {
+    font-size: 80px !important;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 90px !important;
+}
+.pdp-sub-kv-title {
+    font-size: 110px !important;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 90px !important;
+}
+.pdp-kv-txt {
+    font-size: 32px !important;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.s1 .pdp-kv-title,
+.s1 .pdp-sub-kv-title {
+    font-size: 40px !important;
+    line-height: 45px !important;
+}
+.s1 .pdp-kv-txt {
+    font-size: 16px !important;
+    line-height: 20px !important;
+}
+.pdp-title {
+    margin-bottom: 30px !important;
+    padding-bottom: 0 !important;
+    font-size: 72px !important;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 80px !important;
+}
+.pdp-title.t-en {
+    font-size: 76px !important;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 84px !important;
+}
+.pdp-txt1 {
+    margin-top: 30px !important;
+    font-size: 16px !important;
+    line-height: 26px !important;
+}
+.pdp-txt2 {
+    margin-top: 20px !important;
+    color: #363636 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+.pdp-sub-title {
+    color: #000 !important;
+    font-size: 32px !important;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+}
+.pdp-sub-title.t-en {
+    font-size: 34px !important;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+}
+.pdp-sub-txt1 {
+    margin-top: 30px !important;
+    color: #000 !important;
+    font-size: 16px !important;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0 !important;
+}
+.j1 .pdp-title,
+.j1 .pdp-title.t-en,
+.s1 .pdp-title,
+.s1 .pdp-title.t-en {
+    font-size: 32px !important;
+    line-height: 36px !important;
+}
+.pdp-sub-title.t-white,
+.pdp-sub-txt1.t-white,
+.pdp-title.t-white,
+.pdp-txt1.t-white {
+    color: #fff !important;
+}
+.pdp-txt2.t-white {
+    color: #f7f7f7 !important;
+}
+.pdp-txt1.t-gray,
+.pdp-txt2.t-gray {
+    color: #999 !important;
+}
+.j1 .pdp-title,
+.s1 .pdp-title {
+    margin-bottom: 20px !important;
+}
+.j1 .pdp-txt1,
+.s1 .pdp-txt1 {
+    margin-top: 20px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+}
+.j1 .pdp-sub-txt1,
+.j1 .pdp-txt2,
+.s1 .pdp-sub-txt1,
+.s1 .pdp-txt2 {
+    margin-top: 15px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+.j1 .pdp-sub-title,
+.s1 .pdp-sub-title {
+    font-size: 20px !important;
+    line-height: 24px !important;
+}
+.j1 .pdp-sub-title.t-en,
+.s1 .pdp-sub-title.t-en {
+    font-size: 19px !important;
+    line-height: 22px !important;
+}
+.mgb0 {
+    margin-bottom: 0 !important;
+}
+.pdl0 {
+    padding-left: 0 !important;
+}
+.pd0 {
+    padding: 0 !important;
+}
+.font-db {
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-weight: 700 !important;
+}
+.mod-button {
+    height: 3.2em;
+    padding: 0 3em;
+    background-color: #fff;
+    border: 1px solid #292929;
+    border-radius: 1.8em;
+    line-height: 3.3em;
+    font-size: 20px;
+    color: #292929;
+    text-align: center;
+}
+.mod-button:hover {
+    color: #fff;
+    background: #333;
+}
+.mod-button--large {
+    height: 3.6em;
+    line-height: 3.8em;
+    text-transform: uppercase;
+}
+.mod-button--blue {
+    border: 1px solid #3c3c9d;
+    color: #fff;
+    background-color: #3c3c9d;
+    text-transform: uppercase;
+}
+.mod-button--blue:hover {
+    border-color: #28287c;
+    background-color: #28287c;
+    color: #fff;
+    text-transform: uppercase;
+}
+.termslink {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+@media screen and (max-width: 1024px) {
+    .mod-button {
+        line-height: 3.2em;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .pdp-kv-wrap .kv-pdp,
+    .pdp-kv-wrap .kv-pdp .kv-img,
+    .pdp-kv-wrap .kv-pdp .kv-img img {
+        height: 480px;
+    }
+    .mod-button {
+        font-size: 12px;
+    }
+}
+.gray_bar {
+    background: #f2f2f2;
+    width: 100%;
+}
+.gray_bar_box {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.if_img img {
+    max-width: 300px;
+    margin: 10px 0;
+}
+.if_text {
+    font-size: 20px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+@media (max-width: 970px) {
+    .if_img img {
+        max-width: 200px;
+    }
+    .if_text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 640px) {
+    .gray_bar_box {
+        width: 100%;
+    }
+    .if_img img {
+        max-width: 150px;
+    }
+    .if_text {
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .if_img img {
+        max-width: 100px;
+    }
+    .if_text {
+        font-size: 12px;
+    }
+}
+.color_yb .color_yb .pdp-sub-kv-title,
+.color_yb .function-wrap .list li,
+.color_yb .highlights-list,
+.color_yb .highlights-list li .desc,
+.color_yb .highlights-list li .stit,
+.color_yb .highlights-list li .tit,
+.color_yb .if_text,
+.color_yb .m_content-new-gallery div.c_paging-type a > span,
+.color_yb .notice-wrap .txt a,
+.color_yb .pdp-acc .pdp-acc-title,
+.color_yb .pdp-info-wrap .product-cont .product-name,
+.color_yb .pdp-kv-title,
+.color_yb .pdp-kv-txt,
+.color_yb .pdp-kv-wrap .kv-pdp .kv-cont .desc,
+.color_yb .pdp-kv-wrap .kv-tab .kv-cont .desc,
+.color_yb .pdp-sub-title,
+.color_yb .pdp-sub-txt1,
+.color_yb .pdp-title,
+.color_yb .pdp-txt1,
+.color_yb .pdp-txt2,
+.color_yb .product-specs .specs-view .list li .desc,
+.color_yb .s-tab li a,
+.color_yb .shop-layer-wrap .pop-title,
+.color_yb .shop-layer-wrap .shop-list li .btn a,
+.color_yb .shop-layer-wrap .shop-list li .sort,
+.color_yb .sticky-menu .heading .in,
+.color_yb .sticky-menu.t-black .buy-list li.stit {
+    color: #fff01f !important;
+    background: #000 !important;
+}
+.color_yb .slide-prev-t3 {
+    background-image: url(/common/images/btn_slide_t1_prev.png);
+}
+.color_yb .slide-next-t3 {
+    background-image: url(/common/images/btn_slide_t1_next.png);
+}
+.color_yb .s-tab li a.on {
+    color: #000 !important;
+    background: #fff01f !important;
+}
+.j1 .sticky-menu.m-top .btn-buy {
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 108px;
+    font-size: 14px;
+    line-height: 48px;
+    border: 0;
+}
+.j1 .sticky-menu.m-top .heading {
+    opacity: 1;
+    left: 15px;
+    right: 125px;
+}
+.j1 .sticky-menu.m-top.float .heading {
+    right: 165px;
+}
+.j1 .sticky-menu.t-black.m-top {
+    position: absolute;
+    min-height: 100px;
+    padding: 0;
+    background: #202426;
+}
+.j1 .sticky-menu.t-black.m-top .inner,
+.j1 .sticky-menu.t-white-new.m-top.float .inner {
+    height: 100px;
+}
+.j1 .sticky-menu.t-black.m-top.float .btn-buy,
+.j1 .sticky-menu.v-nbuy.v-review.float .btn-review {
+    right: 50px;
+}
+.j1 .sticky-menu.t-black.m-top .heading .in {
+    padding-left: 0;
+}
+.j1 .sticky-menu.t-black.m-top .menu-wrap .next {
+    background-position: 0 0;
+}
+.sticky-menu.t-white-new {
+    height: 86px;
+}
+.sticky-menu.t-white-new .inner {
+    background: url(/common/images/pdp/bg_sticky_white.png) left top repeat-x #fff;
+}
+.sticky-menu.t-white-new.float .inner {
+    background-image: url(/common/images/pdp/bg_sticky_white_floating.png);
+}
+.sticky-menu.t-white-new .menu li a {
+    color: #000;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+}
+.j1 .sticky-menu.t-white-new.m-top .heading .in,
+.j2 .sticky-menu.t-white-new.m-top .heading .in,
+.j3 .sticky-menu.t-white-new.m-top .heading .in,
+.r2020-pdp-inner-wrap .r2020-pdp-inner a,
+.r2020-spec-wrap .spec-tit-wrap .product-names-list a.on,
+.r2020-sticky-menu.white .r2020-tit-wrap .heading .in,
+.sticky-menu.t-white-new .menu li a.on {
+    color: #000;
+}
+.j1 .sticky-menu.t-white-new.m-top {
+    min-height: 100px;
+    background: #fff;
+}
+.j1 .sticky-menu.t-white-new.m-top:before {
+    background: #fff;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+.j12 .sticky-menu.t-white-new.m-top .menu-wrap .next {
+    background: url(/common/images/pdp/tab_mask_white.png) 50% 50% no-repeat;
+    background-size: 35px 35px;
+}
+.j1 .sticky-menu.t-white-new.m-top .menu-wrap .next {
+    background-image: url(/common/images/pdp/tab_mask_white.png);
+    background-size: 100% 50px;
+}
+.j1 .sticky-menu.t-white-new.m-top [class*="btn-gnb-"] [class*="line"] {
+    background: #000;
+}
+.j1 .sticky-menu.t-white-new.m-top.float .menu-wrap:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #dedede;
+}
+.j1 .sticky-menu.t-white-new:before {
+    height: 49px;
+}
+.m-show,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class*="disable"] {
+    display: none !important;
+}
+.j1 .m-show {
+    display: block !important;
+}
+.j1 .shop-layer-wrap .pop-cont,
+.jt .shop-layer-wrap .pop-cont {
+    max-height: 100%;
+}
+@media screen and (max-width: 370px) {
+    .j1 [class*="tab-t"] li .rakuten-t2 {
+        width: 97px;
+        height: 16px;
+        background-size: auto 32px;
+    }
+    .j1 [class*="tab-t"] li .on > .rakuten-t2,
+    .j1 [class*="tab-t"] li .rakuten-t2.on,
+    .j1 [class*="tab-t"] li .rakuten-t2:hover {
+        background-position: 100% -16px;
+    }
+}
+.j-anchor {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    width: 1px;
+    height: 1px;
+}
+.j1 .j-anchor {
+    top: 350px;
+}
+.sticky-menu.v-review .btn-review {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 148px;
+    display: block;
+    width: 100px;
+    height: 49px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    line-height: 49px;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background: #0075c9;
+    -webkit-transition: 0.45s;
+    -o-transition: 0.45s;
+    transition: 0.45s;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+}
+.j1 .sticky-menu.v-review .btn-review {
+    right: 73px;
+    width: 72px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 48px;
+}
+.j1 .sticky-menu.v-review.float .btn-review {
+    right: 123px;
+}
+.j1 .sticky-menu.v-review .btn-buy {
+    width: 72px !important;
+}
+.j1 .sticky-menu.v-review .heading,
+.j1 .sticky-menu.v-review.g-open .heading {
+    right: 150px !important;
+}
+.j1 .sticky-menu.v-review.float .heading,
+.j1 .sticky-menu.v-review.g-open-s .heading {
+    right: 200px !important;
+}
+.j2 .sticky-menu.v-isrt .btn-buy,
+.j2 .sticky-menu.v-isrt-l .btn-buy,
+.j2 .sticky-menu.v-long .btn-buy,
+.j2 .sticky-menu.v-long .buy-list,
+.j3 .sticky-menu.v-isrt .btn-buy,
+.j3 .sticky-menu.v-isrt-l .btn-buy,
+.j3 .sticky-menu.v-long .btn-buy,
+.j3 .sticky-menu.v-long .buy-list {
+    width: 200px !important;
+}
+.j1 .sticky-menu.v-isrt .btn-buy,
+.j1 .sticky-menu.v-isrt-l .btn-buy {
+    width: 165px !important;
+}
+.j1 .sticky-menu.v-isrt .heading,
+.j1 .sticky-menu.v-isrt-l .heading,
+.j1 .sticky-menu.v-isrt.g-open .heading {
+    right: 170px !important;
+}
+.j1 .sticky-menu.v-isrt-l.float .heading,
+.j1 .sticky-menu.v-isrt.float .heading,
+.j1 .sticky-menu.v-isrt.g-open-s .heading {
+    right: 220px !important;
+}
+.j2 .sticky-menu.v-isrt.v-review .btn-buy,
+.j3 .sticky-menu.v-isrt.v-review .btn-buy {
+    width: 146px !important;
+}
+.j1 .sticky-menu.v-isrt.v-review .btn-buy {
+    width: 110px !important;
+}
+.j1 .sticky-menu.v-isrt.v-review .btn-review {
+    right: 111px !important;
+}
+.j1 .sticky-menu.v-isrt.v-review.float .btn-review,
+.j1 .sticky-menu.v-isrt.v-review.g-open-s .btn-review {
+    right: 161px !important;
+}
+.j1 .sticky-menu.v-isrt.v-review .heading,
+.j1 .sticky-menu.v-isrt.v-review.g-open .heading {
+    right: 185px !important;
+}
+.j1 .sticky-menu.v-isrt.v-review.float .heading,
+.j1 .sticky-menu.v-isrt.v-review.g-open-s .heading {
+    right: 235px !important;
+}
+.j1 .sticky-menu.v-nbuy.v-review .heading,
+.j1 .sticky-menu.v-nbuy.v-review.g-open .heading {
+    right: 85px !important;
+}
+.j1 .sticky-menu.v-nbuy.v-review.float .heading,
+.j1 .sticky-menu.v-nbuy.v-review.g-open-s .heading {
+    right: 135px !important;
+}
+.jt .sticky-menu.v-nbuy.v-review .btn-review,
+.sticky-menu.v-nbuy.v-review .btn-review {
+    right: 0;
+}
+.j1 .sticky-menu.v-long .buy-list {
+    width: 100% !important;
+}
+.j2 .sticky-menu.v-long.v-review .btn-review,
+.j3 .sticky-menu.v-long.v-review .btn-review {
+    right: 202px;
+}
+html.color_yb .r2020-product-support .support-list-item strong,
+html.color_yb .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta a[class*="btn-"],
+html.color_yb .sticky-menu.v-review .btn-review {
+    color: #fff01f !important;
+}
+@supports ((-webkit-backdrop-filter: blur(0.8em)) or (backdrop-filter: blur(0.8em))) {
+    .sticky-menu.t-black.t-blur .inner {
+        background: rgba(0, 0, 0, 0.55) !important;
+        -webkit-backdrop-filter: blur(0.8em);
+        backdrop-filter: blur(0.8em);
+    }
+}
+.sticky-menu.t-black.t-blur .inner {
+    background: rgba(0, 0, 0, 0.9);
+}
+.sticky-menu.t-black.t-blur .inner:after,
+.sticky-menu.t-black.t-blur .inner:before {
+    content: "";
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.sticky-menu.t-black.t-blur .inner:before {
+    top: 48px;
+}
+.sticky-menu.t-black.t-blur .inner:after {
+    top: 83px;
+}
+.sticky-menu.t-black.t-blur .menu li a {
+    color: #fff;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+.j1 .sticky-menu.t-black.t-blur {
+    background: 0 0;
+}
+.j1 .sticky-menu.t-black.t-blur .inner:before {
+    top: 50px;
+}
+.j1 .sticky-menu.t-black.t-blur .inner:after {
+    top: 99px;
+}
+.j1 .sticky-menu.t-black.t-blur.float .menu-wrap {
+    border-top: 0;
+    background: 0 0;
+}
+.j1 .sticky-menu.t-black.t-blur .menu-wrap .next {
+    width: 60px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(87%, #000), to(#000));
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(87%, #000), to(#000));
+    background: -webkit-linear-gradient(left, transparent 0, #000 87%, #000 100%);
+    background: -o-linear-gradient(left, transparent 0, #000 87%, #000 100%);
+    background: linear-gradient(to right, transparent 0, #000 87%, #000 100%);
+}
+.j1 .sticky-menu.t-black.m-top.g-open .menu-wrap,
+.j1 .sticky-menu.t-black.m-top.g-open-s:before,
+.j1 .sticky-menu.t-black.m-top.t-blur.g-open-s .menu-wrap,
+.j1 .sticky-menu.t-white-new.m-top.g-open .menu-wrap,
+.j1 .sticky-menu.t-white-new.m-top.g-open-s:before {
+    border-top: 0 !important;
+}
+.j1 .sticky-menu.t-black.m-top.g-open:before {
+    display: block !important;
+    border-top: 1px solid #333 !important;
+}
+.j1 .sticky-menu.t-black.m-top.g-open.float:after {
+    content: "";
+    z-index: 801;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    height: 1px;
+    background: #333;
+}
+.j1 .sticky-menu.t-black.m-top.g-open-s {
+    min-height: 101px !important;
+}
+.j1 .sticky-menu.t-black.m-top.g-open-s .menu-wrap,
+.j1 .sticky-menu.t-white-new.m-top.g-open-s .menu-wrap {
+    border-top: 1px solid #333 !important;
+}
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .sticky-menu.t-white-new.g-open .inner {
+        background: url(/common/images/pdp/bg_sticky_white.png) left top repeat-x #fff !important;
+    }
+    .sticky-menu.t-white-new.g-open-s .inner {
+        background-image: url(/common/images/pdp/bg_sticky_white_floating.png) !important;
+    }
+}
+.j1 .sticky-menu.t-white-new.m-top.g-open:before {
+    display: block !important;
+    border-top: 1px solid #dadada !important;
+}
+.j1 .sticky-menu.t-white-new.m-top.g-open.float:after {
+    background: #dadada !important;
+}
+.j1 .sticky-menu.g-open-s .btn-gnb- {
+    opacity: 1 !important;
+    display: block !important;
+    right: 0 !important;
+}
+.j1 .sticky-menu.g-open-s .btn-buy,
+.j1 .sticky-menu.v-nbuy.v-review.g-open-s .btn-review {
+    right: 50px !important;
+}
+.j1 .sticky-menu.v-review.g-open-s .btn-review {
+    right: 123px !important;
+}
+.pdp-info-wrap .product-img .img-preview,
+.product-specs .product {
+    font-size: 0;
+}
+.product-specs .product > div > .btn-buy {
+    min-width: 406px;
+    margin: 0 6px 12px;
+    padding: 0 10px;
+}
+.j2 .product-specs .product > div > .btn-buy {
+    min-width: 355px;
+    padding: 0;
+    font-size: 20px;
+}
+.stacks-list .product-list > li a .buy {
+    min-height: 70px;
+}
+.jt .stacks-list .product-list > li .in-box {
+    padding: 30px 5% 60px;
+}
+.jt .stacks-list .product-list > li {
+    padding: 0 7px;
+}
+.sticky-menu .heading.c-white .prd-name svg {
+    fill: #fff;
+}
+.sticky-menu .prd-name {
+    position: relative;
+    display: block;
+    color: #000;
+}
+.sticky-menu .prd-name .icon-dropdown {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.sticky-menu .prd-name.open .icon-dropdown {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.sticky-menu .prd-list {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 280px;
+    border-radius: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.sticky-menu .prd-list > ul {
+    padding: 8px 0;
+}
+.sticky-menu .prd-list > ul > li > a {
+    display: block;
+    padding: 5px 48px 5px 24px;
+    color: #000;
+    font-size: 14px;
+}
+.sticky-menu .prd-list > ul > li .icon-select {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+}
+.ios .sticky-menu .prd-name > span {
+    letter-spacing: -0.015vw;
+    font-family: sharpsans;
+}
+.j1 .sticky-menu .heading {
+    height: 50px;
+}
+.j1 .sticky-menu .heading .in {
+    display: block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.j1 .sticky-menu .prd-name .icon-dropdown {
+    width: 20px;
+    height: 20px;
+}
+.j1 .sticky-menu .prd-list {
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+.j1 .sticky-menu .prd-list > ul > li > a {
+    padding: 5px 30px 5px 15px;
+}
+.j1 .sticky-menu .prd-list > ul > li .icon-select {
+    right: 15px;
+}
+html.color_yb .r2020-spec-wrap .product-names-list a.on,
+html.color_yb .sticky-menu .heading,
+html.color_yb .sticky-menu .heading .in,
+html.color_yb .sticky-menu .heading span,
+html.color_yb .sticky-menu .prd-list > ul > li.prd-select a {
+    background-color: #fff01f !important;
+    color: #000 !important;
+}
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .carrier-copy,
+html.color_yb .sticky-menu .heading.c-white,
+html.color_yb .sticky-menu .heading.c-white .in,
+html.color_yb .sticky-menu .heading.c-white .prd-name > span,
+html.color_yb .sticky-menu .heading.c-white span,
+html.color_yb .sticky-menu .prd-list > ul > li a {
+    color: #fff01f !important;
+    background-color: #000 !important;
+}
+html.color_yb .sticky-menu .heading.c-white .prd-name svg {
+    fill: #fff01f !important;
+}
+.select-agency {
+    position: relative;
+    margin-top: 34px;
+    font-size: 0;
+}
+.select-agency a {
+    display: inline-block;
+    width: 148px;
+    height: 37px;
+    line-height: 37px;
+    border: 2px solid #ccc;
+    text-align: center;
+    vertical-align: top;
+}
+.j1 .select-agency a.au,
+.select-agency a.au {
+    margin-right: 8px;
+}
+.select-agency a span {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    text-indent: -30000px;
+}
+.select-agency a.au span {
+    width: 52px;
+    height: 17px;
+    background-image: url(/common/images/logo_carrier_au_grey.svg);
+}
+.select-agency a.docomo span {
+    width: 80px;
+    height: 17px;
+    background-image: url(/common/images/logo_carrier_docomo_grey.svg);
+}
+.select-agency a.au.on span {
+    background-image: url(/common/images/logo_carrier_au.svg);
+}
+.select-agency a.docomo.on span {
+    background-image: url(/common/images/logo_carrier_docomo.svg);
+}
+.j2 .select-agency a {
+    width: 142px;
+    height: 34px;
+    line-height: 34px;
+}
+.j2 .select-agency a.au span {
+    width: 48px;
+    height: 15px;
+}
+.j2 .select-agency a.docomo span {
+    width: 76px;
+    height: 15px;
+}
+.j1 .select-agency {
+    margin-top: 18px;
+}
+.j1 .select-agency a {
+    width: 128px;
+    height: 32px;
+    line-height: 32px;
+    border: 2px solid #ccc;
+}
+.j1 .select-agency a.au span {
+    width: 44px;
+    height: 15px;
+}
+.j1 .select-agency a.docomo span {
+    width: 74px;
+    height: 15px;
+}
+.r2020-sticky-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    max-width: 1920px;
+    height: 120px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.r2020-spec-wrap,
+.r2020-sticky-menu .r2020-sticky-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-sticky-menu .r2020-tit-wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    height: 68px;
+}
+.r2020-sticky-menu .r2020-tit-wrap .heading {
+    position: static;
+    left: 0;
+    opacity: 1;
+    min-width: 80px;
+}
+.r2020-sticky-menu .r2020-tit-wrap .heading .in {
+    height: auto;
+    padding: 0;
+    font-size: 18px;
+}
+.r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta a[class*="btn-"] {
+    position: static !important;
+    width: auto !important;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #0075c9;
+    vertical-align: top;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta a[class*="btn-"]:last-child {
+    margin-left: 6px;
+}
+.r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta a[class*="btn-"].disabled {
+    background-color: #bbb;
+    cursor: default;
+}
+.r2020-sticky-menu .r2020-menu-wrap {
+    height: 52px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-sticky-menu .r2020-menu-wrap .r2020-sticky-inner {
+    padding-right: 0 !important;
+}
+.r2020-sticky-menu .r2020-menu-wrap .menu-wrap {
+    margin: 0 0 0 -24px;
+}
+.r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu {
+    padding: 0 4px;
+    font-size: 0;
+}
+.r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu li a {
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 52px;
+}
+.r2020-sticky-menu .r2020-menu-wrap .menu-wrap .tab-bar {
+    top: 42px;
+    height: 2px;
+}
+.r2020-sticky-menu .r2020-menu-wrap .btn-gnb- {
+    right: -50px;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+}
+.r2020-sticky-menu.no-menu {
+    overflow: hidden;
+    height: 68px;
+}
+.r2020-sticky-menu.white .r2020-menu-wrap {
+    border-top: 1px solid #ddd;
+}
+.r2020-sticky-menu.white .r2020-menu-wrap .tab-bar {
+    background-color: #2189ff;
+}
+.r2020-sticky-menu.white .r2020-menu-wrap .next {
+    background-image: url("/common/images/pdp/tab_mask_white.png");
+}
+.r2020-sticky-menu.white .r2020-menu-wrap .btn-gnb- [class*="line"] {
+    background-color: #000;
+}
+.r2020-sticky-menu.black {
+    color: #fff;
+    background-color: #1c1d1d;
+}
+.r2020-sticky-menu.black .r2020-tit-wrap {
+    background-color: #313131;
+}
+.r2020-sticky-menu.black .r2020-menu-wrap .menu-wrap .next,
+html.color_yb .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .next {
+    background-image: url("/common/images/tab_mask_black.png");
+}
+@media screen and (max-width: 1279px) {
+    .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-inner {
+        padding: 0 20px;
+    }
+    .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu {
+        padding: 0;
+    }
+}
+.j2 .r2020-sticky-menu {
+    height: 120px;
+}
+.j2 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu li,
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-link-round {
+    margin: 0;
+}
+.j2 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .tab-bar {
+    top: 42px;
+}
+.j12 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .next {
+    width: 46px;
+    height: 52px;
+    margin: 0 !important;
+    background-size: 100% 53px;
+    overflow: hidden;
+}
+.j1 .r2020-sticky-menu {
+    min-height: 102px;
+    padding: 0;
+}
+.j1 .r2020-sticky-menu .r2020-sticky-inner {
+    padding: 0 20px;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-inner {
+    height: 60px;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .heading {
+    margin-right: 10px;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .heading .in {
+    font-size: 14px;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta a[class*="btn-"] {
+    height: 29px;
+    padding: 0 10px;
+    font-size: 11px;
+    line-height: 29px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta .btn-review {
+    min-width: 65px;
+}
+.j1 .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta .btn-booking-buying,
+.j1 .r2020-sticky-menu .r2020-tit-wrap .r2020-sticky-cta .btn-buying {
+    min-width: 105px;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap {
+    height: 42px;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap {
+    height: 100%;
+    margin-left: -10px;
+    padding: 0;
+    border: none;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu li {
+    margin: 0 !important;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .menu li a {
+    padding: 0 10px;
+    line-height: 42px;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .tab-bar {
+    top: 36px;
+}
+.j1 .r2020-sticky-menu .r2020-menu-wrap .menu-wrap .next {
+    height: 42px;
+    background-size: 100% 42px;
+}
+.j1 .r2020-sticky-menu.no-menu {
+    min-height: 60px;
+    max-height: 60px;
+}
+.r2020-product-support,
+.r2020-spec-wrap .spec-tit-wrap {
+    padding-top: 120px;
+}
+.r2020-product-support .support-list-wrap {
+    padding: 0 24px;
+}
+.r2020-product-support .support-list-wrap .support-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    border-radius: 20px;
+    background-color: #000;
+    overflow: hidden;
+}
+.r2020-product-support .support-list-wrap .support-list-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 50px 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-product-support .support-list-wrap .support-list-item .support-ico {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.r2020-product-support .support-list-wrap .support-list-item.support-1 .support-ico {
+    background-image: url("/common/images/pdp/ico_support-banner01.svg");
+}
+.r2020-product-support .support-list-wrap .support-list-item.support-2 .support-ico {
+    background-image: url("/common/images/pdp/ico_support-banner02.svg");
+}
+.r2020-product-support .support-list-wrap .support-list-item.support-3 .support-ico {
+    background-image: url("/common/images/pdp/ico_support-banner03.svg");
+}
+.r2020-product-support .support-list-wrap .support-list-item.support-4 .support-ico {
+    background-image: url("/common/images/pdp/ico_support-banner04.svg");
+}
+.r2020-product-support .support-list-wrap .support-list-item strong {
+    display: block;
+    height: 45px;
+    margin: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.j1 .r2020-product-support {
+    padding-top: 120px;
+    padding-top: 16.667vw;
+}
+.j1 .r2020-product-support .support-list-wrap,
+.j1 .r2020-spec-wrap {
+    padding: 0 40px;
+    padding: 0 5.556vw;
+}
+.j1 .r2020-product-support .support-list-wrap .support-list {
+    display: block;
+    padding-bottom: 80px;
+    padding-bottom: 11.111vw;
+    border-radius: 20px;
+    border-radius: 2.778vw;
+}
+.j1 .r2020-product-support .support-list-wrap .support-list-item {
+    float: left;
+    width: 50%;
+    padding: 80px 0 0;
+    padding: 11.111vw 0 0;
+}
+.j1 .r2020-product-support .support-list-wrap .support-list-item .support-ico {
+    width: 80px;
+    width: 11.111vw;
+    height: 80px;
+    height: 11.111vw;
+}
+.j1 .r2020-product-support .support-list-wrap .support-list-item strong {
+    height: 76px;
+    height: 10.556vw;
+    margin: 24px 0 17px;
+    margin: 3.333vw 0 2.361vw;
+    font-size: 26px;
+    font-size: 3.611vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-link-round span,
+.j1 .r2020-product-support .support-list-wrap .cta-link-round span {
+    padding: 0 48px;
+    padding: 0 6.667vw;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner section {
+    color: #000;
+    background-color: #fff;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .section-txt-wrap {
+    padding: 120px 0 40px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .r2020-section-wrap:not(.r2020-product-support) {
+    padding-bottom: 120px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card-list {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card {
+    padding: 0 12px;
+    vertical-align: top;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-img-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+    height: 240px;
+    max-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-tit {
+    margin-bottom: 35px;
+    white-space: normal;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"] {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"]:before {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    width: 12px;
+    height: 12px;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 2px solid currentColor;
+    border-radius: 0.1px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-prev {
+    left: 24px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-prev:before {
+    border-width: 0 0 2px 2px;
+    margin-left: 5%;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-next {
+    right: 24px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-next:before {
+    border-width: 2px 2px 0 0;
+    margin-left: -5%;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination {
+    display: none;
+    left: 50%;
+    right: auto;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: auto;
+    font-size: 0;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    opacity: 0.16;
+    background-color: #000;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination-bullet-active {
+    opacity: 1;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner {
+    padding: 120px 24px 0;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt {
+    float: left;
+    width: 23.706%;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .carrier-copy {
+    display: block;
+    margin-top: -15px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-area {
+    display: block;
+    margin-top: 32px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-link-round span {
+    padding: 0 48px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-cont-inner {
+    float: right;
+    position: relative;
+    width: 76.293%;
+    margin-right: -12px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap {
+    margin-left: 12px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item {
+    display: inline-block;
+    width: auto;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item + .carrier-logo-item {
+    margin-left: 20px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a {
+    position: relative;
+    display: block;
+    min-width: 150px;
+    padding: 12px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border 0.2s;
+    -o-transition: border 0.2s;
+    transition: border 0.2s;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a.on:before {
+    border-width: 2px;
+    border-color: #000;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item img {
+    display: block;
+    height: 16px;
+    margin: 0 auto;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap {
+    position: relative;
+    min-height: 440px;
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s;
+    -o-transition: height 0.3s, opacity 0.3s;
+    transition: height 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .carrier-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 10;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card {
+    width: 33.333%;
+    padding: 20px 12px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-card-inner {
+    border: none;
+    border-radius: 0;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-img-wrap {
+    position: relative;
+    padding-top: 96.666%;
+    border-radius: 20px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-img-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    max-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-txt-wrap {
+    padding-bottom: 0;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product {
+    margin-top: 120px;
+    background-color: #fafafa;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product .recommended-product-area {
+    position: static;
+    padding: 0 12px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product .recommended-product-area .r2020-product-card .product-img-wrap {
+    padding-top: 96.363%;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product.recently-wrap {
+    padding: 0 0 70px;
+    background-color: #fff !important;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .product-card-slide {
+    padding-bottom: 50px;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .recently-product-area {
+    position: static;
+    width: 1146px;
+    margin: 0 auto;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .recently-product-area .r2020-product-card {
+    width: 33.333%;
+}
+.r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .recently-product-area .r2020-product-card .product-img-wrap {
+    padding-top: 88.826%;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .section-txt-wrap {
+    padding: 120px 0 80px;
+    padding: 16.667vw 0 11.111vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .r2020-section-wrap:not(.r2020-product-support) {
+    padding-bottom: 120px;
+    padding-bottom: 16.667vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide,
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .product-card-slide {
+    padding-bottom: 48px;
+    padding-bottom: 6.667vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card {
+    width: 100%;
+    padding: 0 12px;
+    padding: 0 1.667vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-img-wrap {
+    padding-top: 96.25% !important;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-img-wrap img {
+    width: 320px;
+    width: 44.444vw;
+    height: 320px;
+    height: 44.444vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-tit {
+    height: 77px;
+    height: 10.694vw;
+    margin-bottom: 39px;
+    margin-bottom: 5.417vw;
+    font-size: 32px;
+    font-size: 4.444vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"] {
+    width: 72px;
+    width: 10vw;
+    height: 72px;
+    height: 10vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"]:before {
+    width: 20px;
+    width: 2.778vw;
+    height: 20px;
+    height: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-prev {
+    left: 20px;
+    left: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-next {
+    right: 20px;
+    right: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination-bullet {
+    width: 9px;
+    height: 9px;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner {
+    padding: 120px 32px 0;
+    padding: 16.667vw 4.444vw 0;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt {
+    width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .carrier-copy {
+    margin: 0;
+    font-size: 56px;
+    font-size: 7.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-area {
+    margin-top: 40px;
+    margin-top: 5.556vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-cont-inner {
+    width: 100%;
+    margin-top: 60px;
+    margin-top: 8.333vw;
+    margin-right: 0;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap {
+    margin-left: 8px;
+    margin-left: 1.111vw;
+    overflow: visible;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-slide {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item + .carrier-logo-item {
+    margin-left: 20px;
+    margin-left: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a {
+    min-width: 224px;
+    min-width: 31.111vw;
+    padding: 18px;
+    padding: 2.5vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a:before {
+    border-radius: 30px;
+    border-radius: 4.167vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item img,
+.j1 .r2020-spec-wrap .spec-tit-wrap .product-names-list li:after {
+    height: 24px;
+    height: 3.333vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap {
+    min-height: 470px;
+    min-height: 65.278vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .carrier-card-inner {
+    padding-top: 20px;
+    padding-top: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card {
+    width: 50%;
+    padding: 20px 8px;
+    padding: 2.778vw 1.111vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-img-wrap {
+    padding-top: 96.794%;
+    border-radius: 20px;
+    border-radius: 2.778vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-img-wrap img {
+    width: 228px;
+    width: 31.667vw;
+    height: 228px;
+    height: 31.667vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-txt-wrap {
+    padding-top: 40px;
+    padding-top: 5.556vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-txt-wrap .product-tit {
+    height: 70px;
+    height: 9.722vw;
+    font-size: 28px;
+    font-size: 3.889vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product {
+    margin-top: 90px;
+    margin-top: 12.5vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product .recommended-product-area {
+    width: 70%;
+    padding: 0;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product.recently-wrap {
+    padding: 0 0 120px;
+    padding: 0 0 16.667vw;
+}
+.j1 .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .recently-product-area {
+    width: 70%;
+}
+.r2020-spec-wrap .spec-tit-wrap .section-txt-wrap {
+    padding: 80px 0 20px;
+}
+.r2020-spec-wrap .spec-tit-wrap .section-txt-wrap .sec-tit {
+    font-size: 32px;
+    text-align: left;
+}
+.r2020-spec-wrap .spec-tit-wrap .product-names {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+.r2020-spec-wrap .spec-tit-wrap .product-names-list {
+    margin-left: -16px;
+    font-size: 0;
+}
+.r2020-spec-wrap .spec-tit-wrap .product-names-list li {
+    position: relative;
+    display: inline-block;
+    line-height: 1.5;
+}
+.r2020-spec-wrap .spec-tit-wrap .product-names-list li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 16px;
+    background-color: #757575;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.r2020-spec-wrap .spec-tit-wrap .product-names-list a {
+    display: block;
+    padding: 0 16px;
+    font-family: sharpsans, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 18px;
+    color: #757575;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-row-wrap {
+    padding: 40px 0;
+    border-bottom: 1px solid #aaa;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .section-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name {
+    width: 216px;
+    padding-top: 15px;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-values {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 1128px;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item {
+    width: 50%;
+    padding: 20px 100px 20px 0;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item strong {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item p {
+    color: #555;
+    line-height: 1.5;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item {
+    width: 254px;
+    padding: 20px 0;
+    margin-left: 37px;
+    text-align: center;
+}
+@media screen and (max-width: 1440px) {
+    .j2 .pdp-kv-wrap .kv-tab .kv-cont .title,
+    .pdp-kv-wrap .kv-tab .kv-cont .title {
+        font-size: 5vw;
+    }
+    .pdp-kv-wrap .kv-tab .kv-cont .title.t2 {
+        font-size: 6.66vw;
+    }
+    .pdp-kv-wrap .kv-tab .kv-cont .desc {
+        margin-top: 1.38vw;
+    }
+    .j1 .pdp-kv-wrap .kv-tab .kv-cont .title {
+        font-size: 10vw;
+    }
+    .j1 .pdp-kv-wrap .kv-tab .kv-cont .desc {
+        margin-top: 1.5vw;
+        font-size: 3.12vw;
+    }
+    .r2020-product-support {
+        padding-top: 8.333vw;
+    }
+    .r2020-product-support .support-list-wrap,
+    .r2020-spec-wrap {
+        padding: 0 1.667vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a:before,
+    .r2020-product-support .support-list-wrap .support-list {
+        border-radius: 1.389vw;
+    }
+    .r2020-product-support .support-list-wrap .support-list-item {
+        padding: 3.472vw 0;
+    }
+    .r2020-product-support .support-list-wrap .support-list-item .support-ico {
+        width: 3.333vw;
+        height: 3.333vw;
+    }
+    .r2020-product-support .support-list-wrap .support-list-item strong {
+        height: 3.125vw;
+        margin: 1.042vw 0;
+        font-size: 1.111vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .section-txt-wrap {
+        padding: 8.333vw 0 2.778vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .r2020-section-wrap:not(.r2020-product-support) {
+        padding-bottom: 8.333vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card,
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product .recommended-product-area {
+        padding: 0 0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-img-wrap img {
+        width: 16.667vw;
+        height: 16.667vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .r2020-product-card .product-tit {
+        margin-bottom: 2.431vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"] {
+        width: 3.472vw;
+        height: 3.472vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"]:before {
+        width: 0.833vw;
+        height: 0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-prev {
+        left: 1.667vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button.btn-next {
+        right: 1.667vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner {
+        padding: 8.333vw 1.667vw 0;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .carrier-copy {
+        margin-top: -1.042vw;
+        font-size: 3.056vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-area {
+        margin-top: 2.222vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-inner .carrier-txt .cta-link-round span {
+        padding: 0 3.333vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-cont-inner {
+        margin-right: -0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap {
+        margin-left: 0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item + .carrier-logo-item {
+        margin-left: 1.389vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item a {
+        min-width: 10.417vw;
+        padding: 0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-logo-wrap .carrier-logo-item img,
+    .r2020-spec-wrap .spec-tit-wrap .product-names-list li:after {
+        height: 1.111vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap {
+        min-height: 30.556vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .carrier-card-inner {
+        padding-top: 1.389vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card {
+        padding: 1.389vw 0.833vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .product-carrier .carrier-card-wrap .r2020-product-card .product-img-wrap img {
+        width: 12.5vw;
+        height: 12.5vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .recommended-product {
+        margin-top: 8.333vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product.recently-wrap {
+        padding: 0 0 4.861vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .product-card-slide {
+        padding-bottom: 3.472vw;
+    }
+    .r2020-pdp-inner-wrap .r2020-pdp-inner .recently-product .recently-product-area {
+        width: 79.583vw;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .section-txt-wrap {
+        padding: 5.556vw 0 1.389vw;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .section-txt-wrap .sec-tit {
+        font-size: 2.222vw;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .product-names {
+        padding-bottom: 1.389vw;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .product-names-list {
+        margin-left: -1.111vw;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .product-names-list a {
+        padding: 0 1.111vw;
+        font-size: 1.25vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-row-wrap {
+        padding: 2.778vw 0;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name {
+        width: 15vw;
+        padding-top: 1.042vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name strong {
+        font-size: 1.389vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-values {
+        width: 78.333vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item {
+        padding: 1.389vw 6.944vw 1.389vw 0;
+        font-size: 1.111vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item strong {
+        margin-bottom: 0.833vw;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item {
+        width: 17.639vw;
+        padding: 1.389vw 0;
+        margin-left: 2.569vw;
+    }
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item:nth-child(4n + 1) {
+    margin-left: 0;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item strong {
+    position: relative;
+    padding-top: 100%;
+}
+.r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 900px) {
+    .r2020-product-support .support-list-wrap .support-list-item strong {
+        height: 30px;
+        font-size: 10px;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .product-names li:before {
+        height: 10px;
+    }
+    .r2020-spec-wrap .spec-tit-wrap .product-names a {
+        font-size: 11px;
+    }
+    .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item {
+        font-size: 10px;
+    }
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap {
+    padding-top: 102px;
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap .section-txt-wrap {
+    padding: 80px 0 30px;
+    padding: 11.111vw 0 4.167vw;
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap .section-txt-wrap .sec-tit {
+    font-size: 44px;
+    font-size: 6.111vw;
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap .product-names {
+    padding-bottom: 24px;
+    padding-bottom: 3.333vw;
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap .product-names-list {
+    margin-left: -24px;
+    margin-left: -3.333vw;
+}
+.j1 .r2020-spec-wrap .spec-tit-wrap .product-names-list a {
+    padding: 0 24px;
+    padding: 0 3.333vw;
+    font-size: 26px;
+    font-size: 3.611vw;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-row-wrap {
+    padding: 40px 0;
+    padding: 5.556vw 0;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name {
+    width: 100%;
+    padding: 20px 0;
+    padding: 2.778vw 0;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-name strong {
+    font-size: 34px;
+    font-size: 4.722vw;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item {
+    width: 100%;
+    padding: 20px 0;
+    padding: 2.778vw 0;
+    font-size: 26px;
+    font-size: 3.611vw;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-value-item strong {
+    margin-bottom: 14px;
+    margin-bottom: 1.944vw;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-values {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.j1 .r2020-spec-wrap .spec-cont-wrap .spec-cont-inner .spec-color .spec-value-item {
+    max-width: 50%;
+    padding: 20px 22px;
+    padding: 2.778vw 3.056vw;
+    margin-left: 0;
+}
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .carrier-logo-item a.on:before {
+    border-color: #fff01f !important;
+}
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination,
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide button[class^="btn-"],
+html.color_yb .r2020-spec-wrap .product-names-list a,
+html.color_yb .r2020-spec-wrap .spec-name strong,
+html.color_yb .r2020-spec-wrap .spec-value-item p,
+html.color_yb .r2020-spec-wrap .spec-value-item strong {
+    background-color: #000 !important;
+    color: #fff01f !important;
+}
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination-bullet {
+    border: 1px solid #fff01f !important;
+    opacity: 1;
+}
+html.color_yb .r2020-pdp-inner-wrap .r2020-pdp-inner .product-card-slide .jps-pagination-bullet-active {
+    background-color: #fff01f !important;
+}
+html.color_yb .r2020-spec-wrap .spec-color .spec-value-item strong {
+    background-color: #fff !important;
+}
