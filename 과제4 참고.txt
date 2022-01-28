@@ -1,5 +1,22 @@
-https://www.delftstack.com/ko/howto/javascript/load-json-file-in-javascript/
-
 검색어 : httprequest ajax fetch
 https://kangaroo-dev.tistory.com/8
+---------------------
+참고 : https://www.samsung.com/sec/smartphones/galaxy-z-flip3-5g-f711/SM-F711NZKWKOO/
 
+그냥 Ajax 는 jQuery로 쓰는거고
+Ajax XMLhttpRequest 이걸 적용하기
+
+
+XMLHttpRequest 원하는 데이터만 동적으로 받기 : 검색어
+https://gobae.tistory.com/103?category=940543
+
+
+------------------
+https://blog.makerjun.com/765d05b0-34de-4d2c-9675-34dd710fa396
+https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started
+http://milooy.github.io/TIL/JavaScript/jpub-ajax-json.html#ajax%E1%84%85%E1%85%A9-json%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5
+https://990427.tistory.com/37
+https://seraup.dev/102
+https://www.daleseo.com/js-window-fetch/
+https://www.delftstack.com/ko/howto/javascript/load-json-file-in-javascript/
+http://daplus.net/javascript-javascript%EC%97%90%EC%84%9C-%EC%99%B8%EB%B6%80-%EB%A1%9C%EC%BB%AC-json-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%9D%BD%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88/
