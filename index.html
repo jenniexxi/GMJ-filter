@@ -662,13 +662,17 @@
                             <li>
                                 <strong class="option-tit">製品モデルを選択してください</strong>
                                 <div class="select-box model">
-                                    <ul class="buy-product-option"><li data-role-option="model"><input type="radio" name="buy-model" id="model_1_choose" data-role-code="galaxy-z-flip-5g" data-role-id="8" class="on"><label for="model_1_choose"><span><em>Galaxy Z Flip 5G</em></span></label></li><li data-role-option="model"><input type="radio" name="buy-model" id="model_2_choose" data-role-code="galaxy-z-flip" data-role-id="10"><label for="model_2_choose"><span><em>Galaxy Z Flip</em></span></label></li></ul>
+                                    <ul class="buy-product-option">
+                                        
+                                    </ul>
                                 </div>
                             </li>
                             <li>
                                 <strong class="option-tit">製品カラーを選択してください</strong>
                                 <div class="select-box color">
-                                    <ul class="buy-product-option"><li data-role-option="colors"><input type="radio" name="buy-colors" id="colors_1_choose" data-role-id="ミスティックブロンズ"><label for="colors_1_choose"><span class="select-color-code" style="background-color:#9a716e"></span><span>ミスティックブロンズ</span></label></li><li data-role-option="colors"><input type="radio" name="buy-colors" id="colors_2_choose" data-role-id="ミラーパープル" disabled="disabled"><label for="colors_2_choose"><span class="select-color-code" style="background-color:#9e6c9d"></span><span>ミラーパープル</span></label></li><li data-role-option="colors"><input type="radio" name="buy-colors" id="colors_3_choose" data-role-id="ミラーブラック" disabled="disabled"><label for="colors_3_choose"><span class="select-color-code" style="background-color:#10161e"></span><span>ミラーブラック</span></label></li></ul>
+                                    <ul class="buy-product-option">
+                                    
+                                    </ul>
                                 </div>
                             </li>
                             <li>
@@ -892,14 +896,9 @@
             ul.appendChild(li);
 
             li.addEventListener('click', showImg);
-            // li.addEventListener('click', borderChecked);
         }
     }
 
-
-    // function borderChecked(product) {
-    //     const input = document.querySelector(".select-box.model ul");
-    // }
 
     function smallBtn(product) {
         const ul = document.querySelector(".select-box.color ul");
@@ -926,6 +925,8 @@
                 label.appendChild(span1);
                 label.appendChild(span2);
 
+                disabledBox();
+
                 li.addEventListener('click', smallShowImg);
             }
         }
@@ -939,16 +940,17 @@
         const product = myArr.response.resultData.modelList;
         // console.log(myArr.response.resultData.modelList)
 
+        disabledBox();
+
         for(let i = 0; i < product.length; i++) {
             if(product[i].iaCd === IACD && product[i].fmyId === FMYID) {
                 // console.log(myArr)
                 for(let j = 0; j < product[i].relPrdList.length; j++) {
                     // console.log("aaa")
                     if(currentModel === product[i].relPrdList[j].prdName) {
-                        // console.log("88888")
-                        // const img = document.createElement("img");
-                        // img.setAttribute('src',"https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail);
-                        // console.log(img);
+                        for (let k=0; k < product[i].relPrdList[j].colors.length; k++) {
+                            abledBox(product[i].relPrdList[j].colors[k].name)
+                        }
                         const figureImg = document.querySelector(".product-img-wrap img");
                         figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail)
                     }
@@ -958,10 +960,26 @@
     }
 
 
-    function dis() {
-        
+    function disabledBox() {
+        const selectBoxLi = document.querySelectorAll(".select-box.color .buy-product-option li")
+        // const li = document.querySelectorAll(".buy-product-option li");
+        for(let i=0; i < selectBoxLi.length; i++) {
+            const input = selectBoxLi[i].querySelector("input");
+            input.setAttribute("disabled", "disabled");
+        }
     }
 
+    function abledBox(colorname) {
+        const selectBoxLi = document.querySelectorAll(".select-box.color .buy-product-option li")
+        // const li = document.querySelectorAll(".buy-product-option li");
+        for(let i=0; i < selectBoxLi.length; i++) {
+            const input = selectBoxLi[i].querySelector("input");
+            console.log(colorname)
+            if (colorname === input.dataset.roleId) {
+                input.removeAttribute("disabled");
+            }        
+        }
+    }
 
 
 
