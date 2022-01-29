@@ -1,0 +1,36 @@
+
+//my
+
+const get = (url) => {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.send();
+        xhr.onload = () => {
+        if (xhr.status === 200) {
+            resolve(JSON.parse(xhr.response));
+        } else {
+            reject("Error!");
+        }
+        };
+    });
+};
+
+const url = "https://jsonplaceholder.typicode.com";
+
+get(`${url}/posts/1`)
+.then((res) => {
+    console.log(res);
+    return get(`${url}/users/${res.userId}`);
+})
+.then((res2) => console.log(res2));
+
+
+get(url)
+.then(function(arr) {
+    for(const i =0; i < arr.length++; i++) {
+        console.log(arr[i].fmyId);
+    }
+}, function(err) {
+    console.log(err);
+})

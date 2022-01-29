@@ -1,0 +1,25 @@
+const get = (url) => {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            myArr = JSON.parse(this.responseText);
+            myFunction(myArr.response.resultData.modelList); 
+        }
+        else{
+            console.log(this.readyState + " " + this.status);
+        }
+    };
+    xhr.open("GET", url. true);
+    xhr.send();
+};
+
+const url = "https://www.galaxymobile.jp/api/product/model";
+
+const myFunction = (arr) => {
+    console.log(arr);
+    for(let i = 0 ; i < arr.length++; i++) {
+        console.log(arr[i].fmyId);
+    }
+}
+
+get(url);

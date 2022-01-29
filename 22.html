@@ -767,258 +767,29 @@
     <button id="ajaxButton" type="button">Make a request</button>
 
     <script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     function readTextFile(file, callback) {
-    //     var rawFile = new XMLHttpRequest();
-    //     rawFile.overrideMimeType("application/json");
-    //     rawFile.open("GET", file, true);
-    //     rawFile.onreadystatechange = function() {
-    //         if (rawFile.readyState === 4 && rawFile.status == "200") {
-    //             callback(rawFile.responseText);
-    //         }
-    //     }
-    //     rawFile.send(null);
-    // }
-
-    //     //usage:
-    //     readTextFile("model.json", function(text){
-    //         var data = JSON.parse(text);
-    //         console.log(data);
-    //     });
-    // });
-
-
-    // (function() {
-    //     var httpRequest;
-    //     document.getElementById("ajaxButton").addEventListener('click', makeRequest);
-
-    //     function makeRequest() {
-    //         httpRequest = new XMLHttpRequest();
-
-    //         if(!httpRequest) {
-    //         alert('XMLHTTP 인스턴스를 만들 수가 없어요 ㅠㅠ');
-    //         return false;
-    //         }
-    //         httpRequest.onreadystatechange = alertContents;
-    //         httpRequest.open('GET', 'https://www.galaxymobile.jp/api/product/model');
-    //         httpRequest.send();
-    //     }
-
-    //     function alertContents() {
-    //         if (httpRequest.readyState === XMLHttpRequest.DONE) {
-    //         if (httpRequest.status === 200) {
-    //             console.log(httpRequest.responseText);
-    //         } else {
-    //             alert('request에 뭔가 문제가 있어요.');
-    //         }
-    //         }
-    //     }
-    //     })();
-
-
-        
-    // (function() {
-    //     let xhr = new XMLHttpRequest;
-    //     xhr.open('GET', 'https://www.galaxymobile.jp/api/product/model', true);
-    //     xhr.onload = function() {
-            
-    //         if (this.status === 200) {
-    //             console.log(JSON.parse(this.responseText));
-    //         }
-    //     }
-
-    //     xhr.send();
-    // })();
-
-    const IACD = "CDCT0101";
-    const FMYID = "261";
-    let myArr;
-
-    let currentModel;
-    let xmlhttp = new XMLHttpRequest();
-    const url = "https://www.galaxymobile.jp/api/product/model";
-    xmlhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200 ) {
-            myArr = JSON.parse(this.responseText);
-            // myFunction(myArr.response.resultData.modelList);
-            createLayout(myArr.response.resultData.modelList)
-        }
-        else{
-            console.log(this.readyState + " " + this.status);
-        }
+    const get = (url) => {
+        return new Promise((resolve, reject) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.send();
+            xhr.onload = () => {
+            if (xhr.status === 200) {
+                resolve(JSON.parse(xhr.response));
+            } else {
+                reject("Error!");
+            }
+            };
+        });
     };
 
-    xmlhttp.open("GET",url,true);
-    xmlhttp.send();
+    const url = "https://www.galaxymobile.jp/api/product/model";
 
-    function myFunction(arr) {
-        // console.log(arr);
-        for(let i = 0 ; i < arr.length; i++) {
-            // console.log(arr[i].fmyId);
-            // if (arr[i].fmyId === "261") {
-            //     console.log(arr[i])
-            // }
-        }
-    }
-
-
-    function bigBtn (product) {
-        const ul = document.querySelector(".select-box.model ul");
-        // console.log(ul[0]);
-
-        for(let i = 0; i < product.relPrdList.length; i++) {
-            const prdname = product.relPrdList[i].prdName;
-            console.log(prdname);
-            // console.group()
-            const li = document.createElement("li");
-            const input = document.createElement("input");
-            const label = document.createElement("label");
-            const span = document.createElement("span");
-            const em = document.createElement("em");
-
-            li.setAttribute('data-role-option', "model");
-            input.setAttribute('type', "radio");
-            input.setAttribute('name', "buy-model");
-            input.setAttribute('id', `model_${i + 1}_choose`);
-            input.setAttribute('data-role-code', prdname);
-            input.setAttribute('data-role-id', product.relPrdList[i].id);
-            label.setAttribute('for',`model_${i + 1}_choose`);
-            em.appendChild(document.createTextNode(prdname));
-
-            span.appendChild(em);
-            label.appendChild(span);
-            li.appendChild(input);
-            li.appendChild(label);
-            ul.appendChild(li);
-
-            li.addEventListener('click', showImg);
-            // li.addEventListener('click', borderChecked);
-        }
-    }
-
-
-    // function borderChecked(product) {
-    //     const input = document.querySelector(".select-box.model ul");
-    // }
-
-    function smallBtn(product) {
-        const ul = document.querySelector(".select-box.color ul");
-
-        for(let i = 0; i < product.relPrdList.length; i++) {
-            for (let j = 0; j < product.relPrdList[i].colors.length; j++) {
-                const li = document.createElement("li");
-                const input = document.createElement("input");
-                const label = document.createElement("label");
-                const span1 = document.createElement("span");
-                const span2 = document.createElement("span");
-                li.setAttribute('data-role-option', "colors");
-                label.setAttribute('for',`color_${i + 1}_choose`);
-                span1.setAttribute('class','select-color-code');
-                span1.style.backgroundColor = product.relPrdList[i].colors[j].hex;
-                span2.appendChild(document.createTextNode(product.relPrdList[i].colors[j].name));
-                input.setAttribute('type', "radio");
-                input.setAttribute('name', "buy-colors");
-                input.setAttribute('id', `colors_${i + 1}_choose`);
-                input.setAttribute('data-role-id', product.relPrdList[i].colors[j].name);
-                li.appendChild(input);
-                li.appendChild(label);
-                ul.appendChild(li);
-                label.appendChild(span1);
-                label.appendChild(span2);
-
-                li.addEventListener('click', smallShowImg);
-            }
-        }
-    }
-
-    function showImg() {
-        currentModel = this;
-        const input = this.querySelector('input');
-        currentModel = input.dataset.roleCode;
-        // console.log(currentModel);
-        const product = myArr.response.resultData.modelList;
-        // console.log(myArr.response.resultData.modelList)
-
-        for(let i = 0; i < product.length; i++) {
-            if(product[i].iaCd === IACD && product[i].fmyId === FMYID) {
-                // console.log(myArr)
-                for(let j = 0; j < product[i].relPrdList.length; j++) {
-                    // console.log("aaa")
-                    if(currentModel === product[i].relPrdList[j].prdName) {
-                        // console.log("88888")
-                        // const img = document.createElement("img");
-                        // img.setAttribute('src',"https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail);
-                        // console.log(img);
-                        const figureImg = document.querySelector(".product-img-wrap img");
-                        figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail)
-                    }
-                }
-            }
-        }   
-    }
-
-
-    function dis() {
-        
-    }
-
-
-
-
-
-    function smallShowImg() {
-        let currentModelSmall = this;
-        // console.log(currentModelSmall);
-        const input = this.querySelector('input');
-        currentModelSmall = input.dataset.roleId;
-        // console.log("*******")
-        // console.log(currentModelSmall);
-        const product = myArr.response.resultData.modelList;
-        // console.log(myArr.response.resultData.modelList)
-
-        for(let i = 0; i < product.length; i++) {
-            console.log(1111);
-            const product = myArr.response.resultData.modelList;
-            if(product[i].iaCd === IACD && product[i].fmyId === FMYID) {
-                console.log(222);
-                for(let j = 0; j < product[i].relPrdList.length; j++) {
-                    // console.log(currentModelSmall);
-                    if(currentModel === product[i].relPrdList[j].prdName) {
-                        console.log(444);
-                        for (let k = 0; k < product[i].relPrdList[j].colors.length; k++) {
-                            if (currentModelSmall === product[i].relPrdList[j].colors[k].name) {
-                                const figureImg = document.querySelector(".product-img-wrap img");
-                                figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].colors[k].thumbnail);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-
-
-    
-// 큰 버튼, 컬러 버튼, 
-// 큰 버튼
-    function createLayout (arr) {
-        for(let i = 0; i < arr.length; i++) {
-            if(arr[i].iaCd === IACD && arr[i].fmyId === FMYID) {
-                //1버튼
-                bigBtn(arr[i]);
-                //2버튼
-                smallBtn(arr[i]);
-                //이미지
-                
-                //텍스트 뿌려주고
-            }
-        }
-    }
-    
-    
+    get(`${url}/posts/1`)
+    .then((res) => {
+        console.log(res);
+        return get(`${url}/users/${res.userId}`);
+    })
+    .then((res2) => console.log(res2));
 
 
     </script>
@@ -1026,14 +797,3 @@
 
 </body>
 </html>
-
-
-
-
-<!--
-    
-1. 전체 레이아웃
-2. 만들 리스트 - cdct, 큰 버튼, 작은 버튼, 이미지, 텍스트
-    
-    
---->
