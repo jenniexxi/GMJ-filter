@@ -1,0 +1,13 @@
+
+// 초기화 간단 버전
+
+(function() {
+    let xhr = new XMLHttpRequest;
+    xhr.open('GET', 'https://www.galaxymobile.jp/api/product/model', true);
+    xhr.onload = function() {
+        if (this.status === 200) {
+            console.log(JSON.parse(this.responseText));
+        }
+    }
+    xhr.send();
+})();

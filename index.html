@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMJ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Galaxy製品を購入 - Galaxy公式（日本）</title>
+    <meta name="title" content="Galaxy製品を購入 - Galaxy公式（日本）">
+    <meta property="og:site_name" content="Galaxy公式（日本）">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@GalaxyMobileJP">
+    <meta name="twitter:creator" content="@GalaxyMobileJP">
+    <meta itemprop="url" content="//www.galaxymobile.jp/buy/">
+    <meta property="og:url" content="//www.galaxymobile.jp/buy/">
+    <meta name="twitter:url" content="//www.galaxymobile.jp/buy/">
+    <meta itemprop="image" content="https://www.galaxymobile.jp/common/images/share_basic-dark.jpg">
+    <meta property="og:image" content="https://www.galaxymobile.jp/common/images/share_basic-dark.jpg">
+    <meta name="twitter:image" content="https://www.galaxymobile.jp/common/images/share_basic-dark.jpg">
+    <meta property="og:title" content="Galaxy製品を購入 - Galaxy公式（日本）">
+    <meta name="twitter:title" content="Galaxy製品を購入 - Galaxy公式（日本）">
+    <meta property="og:description" content="Galaxy製品の購入をご検討の方は必見です。お好みのカラー、各キャリア、お得なキャンペーン情報などを確認できます。">
+    <meta name="twitter:description" content="Galaxy製品の購入をご検討の方は必見です。お好みのカラー、各キャリア、お得なキャンペーン情報などを確認できます。">
+    <meta itemprop="description" content="Galaxy製品の購入をご検討の方は必見です。お好みのカラー、各キャリア、お得なキャンペーン情報などを確認できます。">
+    <meta itemprop="keywords" content="Galaxyのスマートフォン購入、Galaxyのウェアラブル購入、Galaxyのスマートウォッチ購入、Galaxyのアクセサリー購入">
+    <meta name="description" content="Galaxy製品の購入をご検討の方は必見です。お好みのカラー、各キャリア、お得なキャンペーン情報などを確認できます。">
+    <meta name="keywords" content="Galaxyのスマートフォン購入、Galaxyのウェアラブル購入、Galaxyのスマートウォッチ購入、Galaxyのアクセサリー購入">
+    
     <link rel="stylesheet" href="css/gnb.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/newpdp.css">
@@ -634,7 +655,8 @@
                     <div class="r2020-sticky-inner">
                         <div class="menu-wrap">
                             <ul class="sticky-my-select" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-                                <li class="my-product"><span>Galaxy Z Flip 5G</span></li>
+                                <!-- <li class="my-product"><span>Galaxy Z Flip 5G</span></li> -->
+                                <li class="my-product"><span></span></li>
                                 <li class="my-color"><span></span></li>
                                 <li class="my-store"><span></span></li>
                             </ul>
@@ -648,7 +670,9 @@
                 <div class="section-inner">
                     <!-- product view -->
                     <div class="buy-img-view-wrap">
-                        <figure class="product-img-wrap"><img src="/resources/product/single/1607589604881.png" alt="ミスティック ブロンズ色のGalaxy Z Flip 5G の前面画像"></figure>
+                        <figure class="product-img-wrap">
+                            <!-- <img src="/resources/product/single/1607589604881.png" alt="ミスティック ブロンズ色のGalaxy Z Flip 5G の前面画像"> -->
+                        </figure>
                         <div class="cta-area">
                             <a href="#" class="cta-link-line btn-popup-360" data-omni-action="prd^buy:navi:options:popup-to:360" style="display: none;"><span>360度で見る</span></a>
                             <a href="/galaxy-z-flip/" class="cta-link-line" data-omni-action="prd^buy:buy-op:Galaxy Z Flip 5G:page-to:galaxy-z-flip"><span>詳細を見る</span></a>
@@ -768,83 +792,21 @@
     <!--wrap e-->
 
 
-    <button id="ajaxButton" type="button">Make a request</button>
-
     <script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     function readTextFile(file, callback) {
-    //     var rawFile = new XMLHttpRequest();
-    //     rawFile.overrideMimeType("application/json");
-    //     rawFile.open("GET", file, true);
-    //     rawFile.onreadystatechange = function() {
-    //         if (rawFile.readyState === 4 && rawFile.status == "200") {
-    //             callback(rawFile.responseText);
-    //         }
-    //     }
-    //     rawFile.send(null);
-    // }
-
-    //     //usage:
-    //     readTextFile("model.json", function(text){
-    //         var data = JSON.parse(text);
-    //         console.log(data);
-    //     });
-    // });
-
-
-    // (function() {
-    //     var httpRequest;
-    //     document.getElementById("ajaxButton").addEventListener('click', makeRequest);
-
-    //     function makeRequest() {
-    //         httpRequest = new XMLHttpRequest();
-
-    //         if(!httpRequest) {
-    //         alert('XMLHTTP 인스턴스를 만들 수가 없어요 ㅠㅠ');
-    //         return false;
-    //         }
-    //         httpRequest.onreadystatechange = alertContents;
-    //         httpRequest.open('GET', 'https://www.galaxymobile.jp/api/product/model');
-    //         httpRequest.send();
-    //     }
-
-    //     function alertContents() {
-    //         if (httpRequest.readyState === XMLHttpRequest.DONE) {
-    //         if (httpRequest.status === 200) {
-    //             console.log(httpRequest.responseText);
-    //         } else {
-    //             alert('request에 뭔가 문제가 있어요.');
-    //         }
-    //         }
-    //     }
-    //     })();
-
-
-        
-    // (function() {
-    //     let xhr = new XMLHttpRequest;
-    //     xhr.open('GET', 'https://www.galaxymobile.jp/api/product/model', true);
-    //     xhr.onload = function() {
-            
-    //         if (this.status === 200) {
-    //             console.log(JSON.parse(this.responseText));
-    //         }
-    //     }
-
-    //     xhr.send();
-    // })();
-
-    const IACD = "CDCT0101";
-    const FMYID = "261";
+    const iacdCdct = "CDCT0101";
+    const fmidNum = "261";
     let myArr;
-
     let currentModel;
+    const figure = document.querySelector(".product-img-wrap");
+    const figureImg = document.createElement("img");
+
+
     let xmlhttp = new XMLHttpRequest();
     const url = "https://www.galaxymobile.jp/api/product/model";
+
     xmlhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200 ) {
+        if(this.readyState == 4 && this.status == 200) {
             myArr = JSON.parse(this.responseText);
-            // myFunction(myArr.response.resultData.modelList);
             createLayout(myArr.response.resultData.modelList)
         }
         else{
@@ -855,25 +817,15 @@
     xmlhttp.open("GET",url,true);
     xmlhttp.send();
 
-    function myFunction(arr) {
-        // console.log(arr);
-        for(let i = 0 ; i < arr.length; i++) {
-            // console.log(arr[i].fmyId);
-            // if (arr[i].fmyId === "261") {
-            //     console.log(arr[i])
-            // }
-        }
-    }
 
-
+    // 첫번째 버튼 생성
     function bigBtn (product) {
         const ul = document.querySelector(".select-box.model ul");
-        // console.log(ul[0]);
 
         for(let i = 0; i < product.relPrdList.length; i++) {
             const prdname = product.relPrdList[i].prdName;
-            console.log(prdname);
-            // console.group()
+            // console.log(prdname);
+            // console.group();
             const li = document.createElement("li");
             const input = document.createElement("input");
             const label = document.createElement("label");
@@ -900,7 +852,8 @@
     }
 
 
-    function smallBtn(product) {
+    // 두번째 버튼 생성
+    function smallBtn (product) {
         const ul = document.querySelector(".select-box.color ul");
 
         for(let i = 0; i < product.relPrdList.length; i++) {
@@ -908,22 +861,24 @@
                 const li = document.createElement("li");
                 const input = document.createElement("input");
                 const label = document.createElement("label");
-                const span1 = document.createElement("span");
-                const span2 = document.createElement("span");
+                const spanColor = document.createElement("span");
+                const spanName = document.createElement("span");
+
                 li.setAttribute('data-role-option', "colors");
                 label.setAttribute('for',`color_${i + 1}_choose`);
-                span1.setAttribute('class','select-color-code');
-                span1.style.backgroundColor = product.relPrdList[i].colors[j].hex;
-                span2.appendChild(document.createTextNode(product.relPrdList[i].colors[j].name));
+                spanColor.setAttribute('class','select-color-code');
+                spanColor.style.backgroundColor = product.relPrdList[i].colors[j].hex;
+                spanName.appendChild(document.createTextNode(product.relPrdList[i].colors[j].name));
                 input.setAttribute('type', "radio");
                 input.setAttribute('name', "buy-colors");
                 input.setAttribute('id', `colors_${i + 1}_choose`);
                 input.setAttribute('data-role-id', product.relPrdList[i].colors[j].name);
+                
                 li.appendChild(input);
                 li.appendChild(label);
                 ul.appendChild(li);
-                label.appendChild(span1);
-                label.appendChild(span2);
+                label.appendChild(spanColor);
+                label.appendChild(spanName);
 
                 disabledBox();
 
@@ -932,49 +887,64 @@
         }
     }
 
+
+    // 첫번째 버튼 선택한 이미지 노출, 상품 정보 노출 (텍스트 | 텍스트)
     function showImg() {
         currentModel = this;
         const input = this.querySelector('input');
         currentModel = input.dataset.roleCode;
-        // console.log(currentModel);
         const product = myArr.response.resultData.modelList;
-        // console.log(myArr.response.resultData.modelList)
+        const productInfo = document.querySelector('.my-product span');
 
         disabledBox();
+        infoReset();
 
         for(let i = 0; i < product.length; i++) {
-            if(product[i].iaCd === IACD && product[i].fmyId === FMYID) {
+            if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
                 // console.log(myArr)
                 for(let j = 0; j < product[i].relPrdList.length; j++) {
-                    // console.log("aaa")
                     if(currentModel === product[i].relPrdList[j].prdName) {
                         for (let k=0; k < product[i].relPrdList[j].colors.length; k++) {
                             abledBox(product[i].relPrdList[j].colors[k].name)
                         }
-                        const figureImg = document.querySelector(".product-img-wrap img");
                         figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail)
+                        figure.appendChild(figureImg);
+                        productInfo.innerText = `${currentModel}`;
+                        // const hide = document.querySelector(".hide");
+                        // hide.style.display = 'block';
                     }
                 }
             }
-        }   
+        }
+
+        // const  = document.querySelector(".r2020-buying .buy-option-wrap input");
     }
 
 
+    // 두번째버튼 정보 reset
+    function infoReset() {
+        const colorInfo = document.querySelector(".my-color span");
+        colorInfo.innerText = "";
+    }
+
+
+    // 두번째 버튼 disabled
     function disabledBox() {
-        const selectBoxLi = document.querySelectorAll(".select-box.color .buy-product-option li")
-        // const li = document.querySelectorAll(".buy-product-option li");
-        for(let i=0; i < selectBoxLi.length; i++) {
-            const input = selectBoxLi[i].querySelector("input");
+        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li");
+        
+        for(let i=0; i < selectboxLi.length; i++) {
+            const input = selectboxLi[i].querySelector("input");
             input.setAttribute("disabled", "disabled");
         }
     }
 
+
+    // 두번째 버튼 abled
     function abledBox(colorname) {
-        const selectBoxLi = document.querySelectorAll(".select-box.color .buy-product-option li")
-        // const li = document.querySelectorAll(".buy-product-option li");
-        for(let i=0; i < selectBoxLi.length; i++) {
-            const input = selectBoxLi[i].querySelector("input");
-            console.log(colorname)
+        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li");
+        
+        for(let i=0; i < selectboxLi.length; i++) {
+            const input = selectboxLi[i].querySelector("input");
             if (colorname === input.dataset.roleId) {
                 input.removeAttribute("disabled");
             }        
@@ -982,31 +952,24 @@
     }
 
 
-
-
+    // 두번째 버튼 선택한 이미지 노출, 상품 정보 노출 (텍스트 | 텍스트)
     function smallShowImg() {
         let currentModelSmall = this;
-        // console.log(currentModelSmall);
         const input = this.querySelector('input');
         currentModelSmall = input.dataset.roleId;
-        // console.log("*******")
-        // console.log(currentModelSmall);
         const product = myArr.response.resultData.modelList;
-        // console.log(myArr.response.resultData.modelList)
+        const colorInfo = document.querySelector('.my-color span');
 
         for(let i = 0; i < product.length; i++) {
-            console.log(1111);
             const product = myArr.response.resultData.modelList;
-            if(product[i].iaCd === IACD && product[i].fmyId === FMYID) {
-                console.log(222);
+            if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
                 for(let j = 0; j < product[i].relPrdList.length; j++) {
-                    // console.log(currentModelSmall);
                     if(currentModel === product[i].relPrdList[j].prdName) {
-                        console.log(444);
                         for (let k = 0; k < product[i].relPrdList[j].colors.length; k++) {
                             if (currentModelSmall === product[i].relPrdList[j].colors[k].name) {
-                                const figureImg = document.querySelector(".product-img-wrap img");
                                 figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].colors[k].thumbnail);
+                                figure.appendChild(figureImg);
+                                colorInfo.innerText = `${currentModelSmall}`;
                             }
                         }
                     }
@@ -1016,29 +979,15 @@
     }
 
 
-
-
-
-    
-// 큰 버튼, 컬러 버튼, 
-// 큰 버튼
+    // 전체 레이아웃
     function createLayout (arr) {
         for(let i = 0; i < arr.length; i++) {
-            if(arr[i].iaCd === IACD && arr[i].fmyId === FMYID) {
-                //1버튼
+            if(arr[i].iaCd === iacdCdct && arr[i].fmyId === fmidNum) {
                 bigBtn(arr[i]);
-                //2버튼
                 smallBtn(arr[i]);
-                //이미지
-                
-                //텍스트 뿌려주고
             }
         }
     }
-    
-    
-
-
     </script>
 
 
@@ -1046,12 +995,9 @@
 </html>
 
 
-
-
 <!--
-    
+
 1. 전체 레이아웃
 2. 만들 리스트 - cdct, 큰 버튼, 작은 버튼, 이미지, 텍스트
-    
-    
+
 --->

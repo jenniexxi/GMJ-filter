@@ -1,5 +1,5 @@
 
-//my
+//my - promise 방법
 
 const get = (url) => {
     return new Promise((resolve, reject) => {
