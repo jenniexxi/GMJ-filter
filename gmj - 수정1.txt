@@ -1,0 +1,64 @@
+https://hianna.tistory.com/465
+
+어차피 뒤에 ?부터는 파라미터로 인식해서 기존 주소에서 왔다갔다하는건 아니고
+저부분만 적용하면 될것같네 onLoad시점에 쿼리스트링이라고하나봐 저걸
+
+urlParamsObj = getUrlParams();
+    localCheck = !(
+      location.href.indexOf("galaxymobile") > -1 ||
+      location.href.indexOf("121.252.118.30") > -1
+    );
+    selectedFilter = [false, false];
+
+    if (Object.keys(urlParamsObj).length === 0) history.back(); //params 이 없을 때
+    if (!$el[0]) return;
+    bindEvents();
+  };
+
+
+http://121.252.118.77:2000/buy/?iaCd=CDCT0101&fmyId=261
+?iaCd=CDCT0101&fmyId=261
+
+
+
+
+const urlParams 
+= new URLSearchParams("?wordid=ekw000033653&q=coffee");
+// value 목록
+const values = urlParams.values();
+for(const value of values)  {
+  document.write(value + '<br>')
+}
+
+ekw000033653
+coffee
+
+
+
+
+const urlParams 
+= new URLSearchParams("?wordid=ekw000033653&q=coffee");
+// value 목록
+const entries = urlParams.entries();
+for(entry of entries)  {
+  document.write(`${entry[0]}, ${entry[1]} <br>`)
+}
+wordid, ekw000033653
+q, coffee
+
+
+
+https://dic.daum.net/notify-Notify?aHR0cHM6Ly9kaWMuZGF1bS5uZXQvd29yZC92aWV3LmRvP3dvcmRpZD1la3cwMDAwMzM2NTMmcT1jb2ZmZWU=;9GUMR2csp3vxea0tphZQVPVUa4HV2US9guRkqo0wDlk=
+
+const url = new URL("https://dic.daum.net/word/view.do?wordid=ekw000033653&q=coffee");
+// URLSearchParams 객체
+const urlParams = url.searchParams;
+// URLSearchParams.get()
+document.write(urlParams.get('wordid') + '<br>'); // ekw000033653
+document.write(urlParams.get('q') + '<br>'); // coffee
+// URLSearchParams.getAll()
+document.write(urlParams.getAll('q') + '<br>'); // ['coffee']
+
+ekw000033653
+coffee
+coffee

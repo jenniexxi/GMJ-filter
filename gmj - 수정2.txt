@@ -1,0 +1,44 @@
+___아래는 data.js에서 활용하는 방법__
+
+const getUrlParams = () => {
+  let params = {};
+  window.location.search.replace(
+    /[?&]+([^=&]+)=([^&]*)/gi,
+    function (str, key, value) {
+      params[key] = decodeURIComponent(value);
+    }
+  );
+  return params;
+};
+
+
+ urlParamsObj = getUrlParams();
+
+
+[사용]
+urlParamsObj.iaCd 이런식으로 사용하면되
+getUrlParams 이부분이 파싱하는 부분인데
+window.location.search 이걸 사용한걸 볼수 있어
+
+
+아래부분을 결국 바꿔보라는 얘긴데 이건 위에 예제 참조해보면 좋을것 같고
+window.location.search.replace(
+    /[?&]+([^=&]+)=([^&]*)/gi,
+    function (str, key, value) {
+      params[key] = decodeURIComponent(value);
+    }
+  );
+
+
+
+
+const urlParams 
+= new URLSearchParams("?wordid=ekw000033653&q=coffee");
+
+// value 목록
+const entries = urlParams.entries();
+
+for(entry of entries)  {
+  document.write(`${entry[0]}, ${entry[1]} <br>`)
+}
+==>>>이걸 활용하면 어떨까 싶네...  URLSearchParams 안에 있는부분은 windows.location.search 이걸 넣어도 될것같고
