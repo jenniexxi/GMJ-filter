@@ -960,6 +960,25 @@
     }
 
 
+
+    function productListFilter(elem) {
+        if(elem.iaCd === iacdCdct && elem.fmyId === fmidNum) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function aa (elem) {
+        if(currentModel === elem.prdName) {
+            return true;
+        } else {
+            return false
+        }
+    }
+
+
+
     // 두번째 버튼 선택한 이미지 노출, 상품 정보 노출 (텍스트 | 텍스트)
     function smallShowImg() {
         let currentModelSmall = this;
@@ -967,6 +986,11 @@
         currentModelSmall = input.dataset.roleId;
         const product = myArr.response.resultData.modelList;
         const colorInfo = document.querySelector('.my-color span');
+
+        const productFilter = product.filter(productListFilter);
+        const productList = productFilter.filter(aa);
+
+
 
         product.forEach((elem)=>{
             if(elem.iaCd === iacdCdct && elem.fmyId === fmidNum) {
