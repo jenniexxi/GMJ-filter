@@ -47,9 +47,6 @@ wordid, ekw000033653
 q, coffee
 
 
-
-https://dic.daum.net/notify-Notify?aHR0cHM6Ly9kaWMuZGF1bS5uZXQvd29yZC92aWV3LmRvP3dvcmRpZD1la3cwMDAwMzM2NTMmcT1jb2ZmZWU=;9GUMR2csp3vxea0tphZQVPVUa4HV2US9guRkqo0wDlk=
-
 const url = new URL("https://dic.daum.net/word/view.do?wordid=ekw000033653&q=coffee");
 // URLSearchParams 객체
 const urlParams = url.searchParams;

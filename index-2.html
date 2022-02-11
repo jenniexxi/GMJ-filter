@@ -793,7 +793,15 @@
 
 
     <script>
-   
+    // function getParameterByName(name) {
+    //     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    //     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    //     results = regex.exec(location.search);
+    //     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    // }
+
+
+
     // function getURLParams(url) {
     //     let result = {};
     //     url.replace(/[?&]{1}([^=&#]+)=([&&#]*)g/, function(s, k, v) { result[k] = decodeURIComponent(v); });
@@ -801,14 +809,14 @@
     // }
     // getURLParams();
         
-    const queryString = window.location.search;
-    console.log(queryString);
+    // const queryString = window.location.search;
+    // console.log(queryString);  
+    
 
 
 
-   
-    const iacdCdct = "CDCT0101";
-    const fmidNum = "261";
+    // const iacdCdct = "CDCT0101";
+    // const fmidNum = "261";
     let myArr;
     let currentModel;
     const figure = document.querySelector(".product-img-wrap");
@@ -830,6 +838,108 @@
 
     xmlhttp.open("GET",url,true);
     xmlhttp.send();
+
+
+    // const queryString = window.location.search;
+    // console.log(queryString);
+
+    // function setChildValue(index) {
+    //     window.location.href = `${queryString}&id=` + index;
+    // }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        const regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
+    }
+    
+    const iacdCdct = getParameterByName('iaCd');
+    const fmidNum = getParameterByName('fmyId');
+    // console.log(iacdCdct);
+    // console.log(fmidNum);
+
+
+
+    // const aaa = window.location.href; // 현재 url
+    // console.log(aaa)
+
+    // const selectparam = "x=3";
+    // history.pushState(null, null, aaa + selectparam)
+    // console.log()
+
+    const urlLink = window.location.href;
+    function addurl() {
+        let param;
+        const inputName = document.getElementById(this.id).name;
+        console.log(inputName);
+        if ( inputName == "buy-model" ) {
+            param = `&id=${this.dataset.roleId}`;
+        } else if ( inputName == "buy-colors" ) {
+            param = `&colors=${this.dataset.roleId}`;
+            if (window.location.href.indexOf("id") != -1) {
+                history.pushState(null, null, window.location.href + param);
+                return;
+            }
+        } else if ( inputName == "buy-carrier" ) {
+            param = `&carrier=${this.dataset.roleId}`;
+        }
+        history.pushState(null, null, urlLink + param);
+        // console.log(param)
+    }
+
+
+
+
+//     const optionSelectParamChange = () => {
+//     let selectParams = `/buy/?iaCd=${modelCopyData[0].iaCd}&fmyId=${modelCopyData[0].fmyId}&`;
+
+//     for (let key in selectObj) {
+//       if (selectObj[key]) {
+//         if (key === "model") selectParams += `id=${selectObj.model}&`;
+//         if (key === "colors") selectParams += `colors=${selectObj.colors}&`;
+//         if (key === "carrier") selectParams += `carrier=${selectObj.carrier}&`;
+//         if (key === "shop") selectParams += `shop=${selectObj.shop}&`;
+//       }
+//     }
+
+//     selectParams = selectParams.slice(0, -1);
+//     history.pushState(null, null, location.origin + selectParams);
+//   };
+
+
+
+
+
+    
+
+    // let urlnew = new URL(window.document.location);
+    // function appendQueryParameter(urlnew, name, value) {
+    //     if (queryString.length === 0) {
+    //         return;
+    //     }
+
+    //     let rawURL = queryString;
+
+    //     if (rawURL.charAt(rawURL.length - 1) === "?") {
+    //         rawURL = rawURL.slice(0, rawURL.length - 1);
+    //     }
+
+    //     const parsedURL = new URL(rawURL);
+    //     let parameters = parsedURL.search;
+
+    //     parameters += (parameters.length === 0) ? "?" : "&";
+    //     parameters = `${parameters}${name}=${value}`;
+
+    //     return `${parsedURL.origin}${parsedURL.pathname}${parameters}`;
+    // }
+
+    // appendQueryParameter(queryString, 'a', '88')
+    // console.log(appendQueryParameter("query" + queryString, 'a', '88'))
+
+
+
+    
 
 
     // 첫번째 버튼 생성
@@ -862,6 +972,7 @@
             ul.appendChild(li);
 
             li.addEventListener('click', showImg);
+            input.addEventListener('click', addurl);
         }
     }
 
@@ -869,7 +980,7 @@
     // 두번째 버튼 생성
     function smallBtn (product) {
         const ul = document.querySelector(".select-box.color ul");
-
+        var idx = 0;
         for(let i = 0; i < product.relPrdList.length; i++) {
             for (let j = 0; j < product.relPrdList[i].colors.length; j++) {
                 const li = document.createElement("li");
@@ -879,23 +990,27 @@
                 const spanName = document.createElement("span");
 
                 li.setAttribute('data-role-option', "colors");
-                label.setAttribute('for',`color_${i + 1}_choose`);
+                label.setAttribute('for',`color_${idx + 1}_choose`);
                 spanColor.setAttribute('class','select-color-code');
                 spanColor.style.backgroundColor = product.relPrdList[i].colors[j].hex;
                 spanName.appendChild(document.createTextNode(product.relPrdList[i].colors[j].name));
                 input.setAttribute('type', "radio");
                 input.setAttribute('name', "buy-colors");
-                input.setAttribute('id', `colors_${i + 1}_choose`);
+                input.setAttribute('id', `color_${idx + 1}_choose`);
                 input.setAttribute('data-role-id', product.relPrdList[i].colors[j].name);
-                
+                console.log(idx)
                 li.appendChild(input);
                 li.appendChild(label);
                 ul.appendChild(li);
                 label.appendChild(spanColor);
                 label.appendChild(spanName);
-
+                // console.log(typeof input)
                 li.addEventListener('click', smallShowImg);
                 li.addEventListener('click', smallShowOnlyText);
+                console.log(input)
+                input.addEventListener('click', addurl);
+                idx++;
+                
             }
         }
     }
@@ -982,6 +1097,7 @@
                                 figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].colors[k].thumbnail);
                                 figure.appendChild(figureImg);
                                 colorInfo.innerText = `${currentModelSmall}`;
+                                input.disabled = false;
                             }
                         }
                     }
