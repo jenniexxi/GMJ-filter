@@ -702,7 +702,16 @@
                             <li>
                                 <strong class="option-tit" data-role-text="キャリアを選択してください,オンラインショップを選択してください">キャリアを選択してください</strong>
                                 <div class="select-box store">
-                                    <ul class="buy-product-option"><li data-role-option="carrier"><input type="radio" name="buy-carrier" id="carrier_1_choose" data-role-id="CDCT0203"><label for="carrier_1_choose"><span><img src="/common/images/logo_carrier_au.svg" alt="au"></span></label></li></ul>
+                                    <ul class="buy-product-option">
+                                        <!-- <li data-role-option="carrier">
+                                            <input type="radio" name="buy-carrier" id="carrier_1_choose" data-role-id="CDCT0203">
+                                            <label for="carrier_1_choose">
+                                                <span>
+                                                    <img src="/common/images/logo_carrier_au.svg" alt="au">
+                                                </span>
+                                            </label>
+                                        </li> -->
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
@@ -793,30 +802,6 @@
 
 
     <script>
-    // function getParameterByName(name) {
-    //     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    //     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    //     results = regex.exec(location.search);
-    //     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    // }
-
-
-
-    // function getURLParams(url) {
-    //     let result = {};
-    //     url.replace(/[?&]{1}([^=&#]+)=([&&#]*)g/, function(s, k, v) { result[k] = decodeURIComponent(v); });
-    //     return result;
-    // }
-    // getURLParams();
-        
-    // const queryString = window.location.search;
-    // console.log(queryString);  
-    
-
-
-
-    // const iacdCdct = "CDCT0101";
-    // const fmidNum = "261";
     let myArr;
     let currentModel;
     const figure = document.querySelector(".product-img-wrap");
@@ -839,14 +824,6 @@
     xmlhttp.open("GET",url,true);
     xmlhttp.send();
 
-
-    // const queryString = window.location.search;
-    // console.log(queryString);
-
-    // function setChildValue(index) {
-    //     window.location.href = `${queryString}&id=` + index;
-    // }
-
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         const regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -856,23 +833,12 @@
     
     const iacdCdct = getParameterByName('iaCd');
     const fmidNum = getParameterByName('fmyId');
-    // console.log(iacdCdct);
-    // console.log(fmidNum);
 
-
-
-    // const aaa = window.location.href; // 현재 url
-    // console.log(aaa)
-
-    // const selectparam = "x=3";
-    // history.pushState(null, null, aaa + selectparam)
-    // console.log()
 
     const urlLink = window.location.href;
     function addurl() {
         let param;
         const inputName = document.getElementById(this.id).name;
-        console.log(inputName);
         if ( inputName == "buy-model" ) {
             param = `&id=${this.dataset.roleId}`;
         } else if ( inputName == "buy-colors" ) {
@@ -883,62 +849,126 @@
             }
         } else if ( inputName == "buy-carrier" ) {
             param = `&carrier=${this.dataset.roleId}`;
+            history.pushState(null, null, window.location.href + param);
+            return;
         }
         history.pushState(null, null, urlLink + param);
+    }
+
+
+    window.onload = function(e){
+        var param = location.search.replace("?","").split('&');
+        var paramData = [];
+
+        param.forEach(function(e) {
+            if( e.match( /(iaCd|fmyId)/ ))
+            paramData.push("&"+ e);
+        });
+
+        if(paramData.length < 1 ) return ;
+
+        paramData[0] = paramData[0].replace("&","?");
+        history.pushState({}, null, location.href.split("?")[0]+ paramData.join(''));
+        param = paramData;
+        // console.log("param")
         // console.log(param)
+        // console.log("paramDatat")
+        // console.log(paramData)
     }
 
 
 
 
-//     const optionSelectParamChange = () => {
-//     let selectParams = `/buy/?iaCd=${modelCopyData[0].iaCd}&fmyId=${modelCopyData[0].fmyId}&`;
-
-//     for (let key in selectObj) {
-//       if (selectObj[key]) {
-//         if (key === "model") selectParams += `id=${selectObj.model}&`;
-//         if (key === "colors") selectParams += `colors=${selectObj.colors}&`;
-//         if (key === "carrier") selectParams += `carrier=${selectObj.carrier}&`;
-//         if (key === "shop") selectParams += `shop=${selectObj.shop}&`;
-//       }
-//     }
-
-//     selectParams = selectParams.slice(0, -1);
-//     history.pushState(null, null, location.origin + selectParams);
-//   };
 
 
+
+    // window.onload = function(e){
+    //     var param = location.search.replace("?","").split('&');
+    //     var paramData = [];
+    //     console.log(param);
+    //     param.forEach(function(e) {
+    //         if( e.indexOf('iacd' || 'fmyId' ) !== -1)
+    //         paramData.push( "&"+ e);
+
+    //     });
+
+    //     if(paramData.length < 1 ) return ;
+
+    //     paramData[0] = paramData[0].replace("&","");
+    //     paramData[0] = "?" + paramData[0];
+
+    //     // history.replaceState({}, null, location.split("?")[0] + paramData.join(''));
+    //     history.replaceState({}, null, "file:///Users/jiyeonhong/Documents/homework/GMJ-filter/index-2.html?iaCd=CDCT0101&fmyId=261" + query);
+    // }
 
 
 
     
+    // window.onload = function(e){
+    //     var param = location.search.replace("?","").split('&');
+    //     var paramData = [];
+    //     console.log(param);
+    //     param.forEach(function(e) {
+    //     if( e.indexOf('iacd') !== -1)
+    //         {
+    //             paramData.push( "&"+ e);
+    //         }
+    //         if(e.indexOf('fmyId') !== -1)
+    //         {
+    //             paramData.push("&"+ e)
+    //         }
+    //     });
 
-    // let urlnew = new URL(window.document.location);
-    // function appendQueryParameter(urlnew, name, value) {
-    //     if (queryString.length === 0) {
-    //         return;
+    //     if(paramData.length > 1 )
+    //     {
+    //         paramData[0] = paramData[0].replace("&","");
+    //         paramData[0] = "?" + paramData[0];
+
+    //         var query = "";
+    //         paramData.forEach( function(e) {
+    //             query += e;
+    //         });
+
+    //         console.log(query);
+    //         console.log(window.location.href);
+    //         // history.replaceState({}, null, location.split("?")[0] + query);
+    //         history.replaceState({}, null, "file:///Users/jiyeonhong/Documents/homework/GMJ-filter/index-2.html?iaCd=CDCT0101&fmyId=261" + query);
     //     }
-
-    //     let rawURL = queryString;
-
-    //     if (rawURL.charAt(rawURL.length - 1) === "?") {
-    //         rawURL = rawURL.slice(0, rawURL.length - 1);
-    //     }
-
-    //     const parsedURL = new URL(rawURL);
-    //     let parameters = parsedURL.search;
-
-    //     parameters += (parameters.length === 0) ? "?" : "&";
-    //     parameters = `${parameters}${name}=${value}`;
-
-    //     return `${parsedURL.origin}${parsedURL.pathname}${parameters}`;
     // }
 
-    // appendQueryParameter(queryString, 'a', '88')
-    // console.log(appendQueryParameter("query" + queryString, 'a', '88'))
+
+
+    // window.onkeydown = function() {
+    //     var kcode = event.keyCode;
+    //     console.log(kcode)
+    //     if(kcode == 116) {
+    //         history.replaceState({}, null, location.pathname);
+    //     }
+    //     console.log("****")
+    // }
+
+
+    
+    // window.addEventListener('beforeunload', (event) => {
+    //     history.pushState(null, null, location.pathname);
+    //     event.returnValue = '';
+    // });
 
 
 
+
+    // window.onbeforeunload = function() {
+    //     console.log("&&&&&&&&&&&&&")
+    //     // console.log("")
+    //     history.pushState(null, null, urlLink);
+        
+    // }
+    // window.onkeydown = function() {
+    //     var kcode = event.keyCode;
+    //     if(kcode == 116) {
+    //     history.replaceState({}, null, urlLink);
+    //     }
+    // }
     
 
 
@@ -971,7 +1001,7 @@
             li.appendChild(label);
             ul.appendChild(li);
 
-            li.addEventListener('click', showImg);
+            input.addEventListener('click', showImg);
             input.addEventListener('click', addurl);
         }
     }
@@ -998,16 +1028,13 @@
                 input.setAttribute('name', "buy-colors");
                 input.setAttribute('id', `color_${idx + 1}_choose`);
                 input.setAttribute('data-role-id', product.relPrdList[i].colors[j].name);
-                console.log(idx)
                 li.appendChild(input);
                 li.appendChild(label);
                 ul.appendChild(li);
                 label.appendChild(spanColor);
                 label.appendChild(spanName);
-                // console.log(typeof input)
-                li.addEventListener('click', smallShowImg);
-                li.addEventListener('click', smallShowOnlyText);
-                console.log(input)
+                input.addEventListener('click', smallShowImg);
+                input.addEventListener('click', smallShowOnlyText);
                 input.addEventListener('click', addurl);
                 idx++;
                 
@@ -1018,22 +1045,24 @@
 
     // 첫번째 버튼 선택한 이미지 노출, 상품 정보 노출 (텍스트 | 텍스트)
     function showImg() {
-        currentModel = this;
-        const input = this.querySelector('input');
-        currentModel = input.dataset.roleCode;
+        currentModel = this.dataset.roleCode;
         const product = myArr.response.resultData.modelList;
         const productInfo = document.querySelector('.my-product span');
 
         disabledBox();
         infoReset();
+        disabledCarrierBox();
+        carrierInfoReset();
 
         for(let i = 0; i < product.length; i++) {
             if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
-                // console.log(myArr)
                 for(let j = 0; j < product[i].relPrdList.length; j++) {
                     if(currentModel === product[i].relPrdList[j].prdName) {
                         for (let k=0; k < product[i].relPrdList[j].colors.length; k++) {
                             abledBox(product[i].relPrdList[j].colors[k].name)
+                        }
+                        for (let k=0; k < product[i].relPrdList[j].carrier.length; k++) {
+                            abledCarrierBox(product[i].relPrdList[j].carrier[k].name)
                         }
                         figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].prdThumbnail)
                         figure.appendChild(figureImg);
@@ -1054,11 +1083,11 @@
 
     // 두번째 버튼 disabled
     function disabledBox() {
-        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li");
+        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li input");
         
         for(let i=0; i < selectboxLi.length; i++) {
-            const input = selectboxLi[i].querySelector("input");
-            input.setAttribute("disabled", "disabled");
+            selectboxLi[i].setAttribute("disabled", "disabled");
+            selectboxLi[i].checked = false;
             selectboxLi[i].removeEventListener('click', smallShowOnlyText);
         }
     }
@@ -1066,12 +1095,11 @@
 
     // 두번째 버튼 abled
     function abledBox(colorname) {
-        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li");
+        const selectboxLi = document.querySelectorAll(".select-box.color .buy-product-option li input");
         
         for(let i=0; i < selectboxLi.length; i++) {
-            const input = selectboxLi[i].querySelector("input");
-            if (colorname === input.dataset.roleId) {
-                input.removeAttribute("disabled");
+            if (colorname === selectboxLi[i].dataset.roleId) {
+                selectboxLi[i].removeAttribute("disabled");
             }  
         }
     }
@@ -1079,9 +1107,7 @@
 
     // 두번째 버튼 선택한 이미지 노출, 상품 정보 노출 (텍스트 | 텍스트)
     function smallShowImg() {
-        let currentModelSmall = this;
-        const input = this.querySelector('input');
-        currentModelSmall = input.dataset.roleId;
+        let currentModelSmall = this.dataset.roleId;
         const product = myArr.response.resultData.modelList;
         const colorInfo = document.querySelector('.my-color span');
 
@@ -1089,16 +1115,16 @@
             const product = myArr.response.resultData.modelList;
             if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
                 for(let j = 0; j < product[i].relPrdList.length; j++) {
-                    // console.log(product[i].relPrdList[j].prdName)
-                    // console.log("current:" + currentModel)
                     if(currentModel === product[i].relPrdList[j].prdName) {
                         for (let k = 0; k < product[i].relPrdList[j].colors.length; k++) {
                             if (currentModelSmall === product[i].relPrdList[j].colors[k].name) {
                                 figureImg.setAttribute('src', "https://www.galaxymobile.jp" + product[i].relPrdList[j].colors[k].thumbnail);
                                 figure.appendChild(figureImg);
                                 colorInfo.innerText = `${currentModelSmall}`;
-                                input.disabled = false;
                             }
+                        }
+                        for (let k=0; k < product[i].relPrdList[j].carrier.length; k++) {
+                            abledCarrierBox(product[i].relPrdList[j].carrier[k].name)
                         }
                     }
                 }
@@ -1108,9 +1134,7 @@
 
     // 두번째 버튼만 클릭했을 때 텍스트 노출 (텍스트 | 텍스트)
     function smallShowOnlyText() {
-        let currentModelSmall = this;
-        const input = this.querySelector('input');
-        currentModelSmall = input.dataset.roleId;
+        let currentModelSmall = this.dataset.roleId;
         const product = myArr.response.resultData.modelList;
         const colorInfo = document.querySelector('.my-color span');
 
@@ -1128,10 +1152,110 @@
         }
     }
 
+    //세번째 버튼 생성
+    function carrierBtn(product) {
+        const ul = document.querySelector(".select-box.store ul");
+        let duplicateArr = [];
+        for(let i = 0; i < product.relPrdList.length; i++) {
+            for (let j = 0; j < product.relPrdList[i].carrier.length; j++) {
+                const carrierName = product.relPrdList[i].carrier.name;
+                if ( duplicateArr.indexOf( carrierName ) == -1 ) {
+                    const li = document.createElement("li");
+                    const input = document.createElement("input");
+                    const label = document.createElement("label");
+                    const span = document.createElement("span");
+
+                    li.setAttribute('data-role-option', "carrier");
+                    label.setAttribute('for',`carrier_${j + 1}_choose`);
+                    input.setAttribute('type', "radio");
+                    input.setAttribute('name', "buy-carrier");
+                    input.setAttribute('id', `carrier_${j + 1}_choose`);
+                    input.setAttribute('data-role-id', product.relPrdList[i].carrier[j].name);
+                    span.innerText = product.relPrdList[i].carrier[j].name;
+                    li.appendChild(input);
+                    li.appendChild(label);
+                    ul.appendChild(li);
+                    label.appendChild(span);
+                    duplicateArr.push(carrierName);
+                    input.addEventListener('click', carrierShowText);
+                    input.addEventListener('click', carrierShowOnlyText);
+                    input.addEventListener('click', addurl);
+                }
+            }
+        }
+    }
+
+    // 세번째 버튼 클릭 시 텍스트 노출 (텍스트 | 텍스트)
+    function carrierShowText() {
+        let currentModelSmall = this.dataset.roleId;
+        const product = myArr.response.resultData.modelList;
+        const carrierInfo = document.querySelector('.my-store span');
+
+        for(let i = 0; i < product.length; i++) {
+            const product = myArr.response.resultData.modelList;
+            if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
+                for(let j = 0; j < product[i].relPrdList.length; j++) {
+                    if(currentModel === product[i].relPrdList[j].prdName) {
+                        for (let k = 0; k < product[i].relPrdList[j].carrier.length; k++) {
+                            if (currentModelSmall === product[i].relPrdList[j].carrier[k].name) {
+                                carrierInfo.innerText = `${currentModelSmall}`;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 세번째 버튼만 클릭했을 때 텍스트 노출 (텍스트 | 텍스트)
+    function carrierShowOnlyText() {
+        let currentModelSmall = this.dataset.roleId;
+        const product = myArr.response.resultData.modelList;
+        const carrierInfo = document.querySelector('.my-store span');
+        console.log(currentModelSmall)
+
+        for(let i = 0; i < product.length; i++) {
+            const product = myArr.response.resultData.modelList;
+            if(product[i].iaCd === iacdCdct && product[i].fmyId === fmidNum) {
+                for(let j = 0; j < product[i].relPrdList.length; j++) {
+                    for (let k = 0; k < product[i].relPrdList[j].carrier.length; k++) {
+                        if (currentModelSmall === product[i].relPrdList[j].carrier[k].name) {
+                            carrierInfo.innerText = `${currentModelSmall}`;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 세번째 버튼 disabled
+    function disabledCarrierBox() {
+        const selectboxLi = document.querySelectorAll(".select-box.store ul li input");
+        
+        for(let i=0; i < selectboxLi.length; i++) {
+            selectboxLi[i].setAttribute("disabled", "disabled");
+            selectboxLi[i].checked = false;
+            selectboxLi[i].removeEventListener('click', carrierShowOnlyText);
+        }
+    }
 
 
+    // 세번째 버튼 abled
+    function abledCarrierBox(carriername) {
+        const selectboxLi = document.querySelectorAll(".select-box.store ul li input")
+        
+        for(let i=0; i < selectboxLi.length; i++) {
+            if (carriername === selectboxLi[i].dataset.roleId) {
+                selectboxLi[i].removeAttribute("disabled");
+            }
+        }
+    }
 
-
+    // 세번째버튼 정보 reset
+    function carrierInfoReset() {
+        const carrierInfo = document.querySelector(".my-store span");
+        carrierInfo.innerText = "";
+    }
 
 
     // 전체 레이아웃
@@ -1140,6 +1264,7 @@
             if(arr[i].iaCd === iacdCdct && arr[i].fmyId === fmidNum) {
                 bigBtn(arr[i]);
                 smallBtn(arr[i]);
+                carrierBtn(arr[i]);
             }
         }
     }
