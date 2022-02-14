@@ -861,19 +861,14 @@
         var paramData = [];
 
         param.forEach(function(e) {
-            if( e.match( /(iaCd|fmyId)/ ))
-            paramData.push("&"+ e);
+        if( e.match( /(iacd|fmyId)/ ))
+            paramData.push( "&"+ e);
         });
 
         if(paramData.length < 1 ) return ;
 
         paramData[0] = paramData[0].replace("&","?");
-        history.pushState({}, null, location.href.split("?")[0]+ paramData.join(''));
-        param = paramData;
-        // console.log("param")
-        // console.log(param)
-        // console.log("paramDatat")
-        // console.log(paramData)
+        history.pushState({}, null, location.href.split("?")[0]+ paramData.join(''));  
     }
 
 
