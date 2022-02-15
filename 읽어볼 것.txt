@@ -1,0 +1,5 @@
+[파일 설명]
+index-final.html : 제출용 최종
+index-2.html : 이것도 최종인데 console 값 및 설명 포함
+
+
