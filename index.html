@@ -807,7 +807,6 @@
     const figure = document.querySelector(".product-img-wrap");
     const figureImg = document.createElement("img");
 
-
     let xmlhttp = new XMLHttpRequest();
     const url = "https://www.galaxymobile.jp/api/product/model";
 
@@ -815,8 +814,7 @@
         if(this.readyState == 4 && this.status == 200) {
             myArr = JSON.parse(this.responseText);
             createLayout(myArr.response.resultData.modelList)
-        }
-        else{
+        } else {
             console.log(this.readyState + " " + this.status);
         }
     };
@@ -834,28 +832,18 @@
     const iacdCdct = getParameterByName('iaCd');
     const fmidNum = getParameterByName('fmyId');
 
-    // function removeDuplicate(arr) {
-
-    // }
     const urlLink = window.location.href;
+
     function addurl() {
         let param;
         const inputName = document.getElementById(this.id).name;
         var myurl = window.location.href;
-        console.log("addurl")
-        console.log(history.state);
-        console.log(window.location.href);
-        console.log("location")
         if ( inputName == "buy-model" ) {
             param = `&id=${this.dataset.roleId}`;
         } else if ( inputName == "buy-colors" ) {
             param = `&colors=${this.dataset.roleId}`;
-            console.log("#####")
-            console.log(window.location.href.indexOf("id") !== -1)
             if (window.location.href.indexOf("id") !== -1) {
-                history.pushState(null, null, getRemoveParameterURL(myurl,["carrier","colors"]) + param);
-                console.log("&&&&&&&&&")
-                console.log(param)
+                history.pushState(null, null, getRemoveParameterURL(myurl,["colors","carrier"]) + param);
                 return;
             }
         } else if ( inputName == "buy-carrier" ) {
@@ -863,15 +851,9 @@
             if (window.location.href.indexOf("id") !== -1) {
                 history.pushState(null, null, getRemoveParameterURL(myurl, []) + param);
                 return;
-            }
-
-            // history.pushState(null, null, getRemoveParameterURL(myurl,"carrier") + param);
-            
+            }   
         }
-
-    
         history.pushState(null, null, getRemoveParameterURL(urlLink,["colors","carrier","id"]) + param);
-     
     }
 
 
@@ -881,162 +863,41 @@
 
         param.forEach(function(e) {
             if( e.match( /(iaCd|fmyId)/ ))
-            paramData.push( "&"+ e);
-            console.log("first param:")
-            console.log(paramData)
+            paramData.push("&"+ e);
         });
-        console.log("secone param:")
-        console.log(paramData)
         if(paramData.length < 1 ) {
-            console.log("third param:");
             return ;
         }
 
         paramData[0] = paramData[0].replace("&","?");
         const retUrl = location.href.split("?")[0]+ paramData.join('');
-        // window.location.href = retUrl;
-        console.log("last param:")
-        console.log(retUrl)
+
         history.pushState({}, null, retUrl);
     }
 
 
     function getRemoveParameterURL(srcurl,params){
-        // console.log(srcurl)
-        // console.log(param)
         var newParam ;
         
         if(params.length >=1 ) {
-
             newParam = srcurl.split("?")[1].split('&');
             for( var i = 0 ; i < params.length; i++) {
                 newParam = newParam.filter(e => e.indexOf(params[i]) == -1 )
             }
-                
             newParam = newParam.map( e => "&" + e);
-        }
-        else{
+        } else {
             newParam = srcurl.split("?")[1].split('&').map( e => "&" + e);  
         }
 
-               
-       // console.log(srcurl.split("?")[1].split('&').filter(e => e.indexOf(param) == -1 ).map( e => "&" + e))
-        console.log(newParam)
-        console.log("*****");
         newParam = newParam.filter((el,pos) => newParam.indexOf(el) == pos);
 
-        console.log(newParam);
-        // console.log(srcurl)
-        // console.log(param)
-
-
-        if (newParam.length >= 1){
+        if (newParam.length >= 1) {
             newParam[0] = newParam[0].replace("&","?");
             return srcurl.split("?")[0] + newParam.join("");
-        }
-        else{
-            console.log(newParam)
+        } else {
             return srcurl.split("?")[0];
         }
-        console.log(newParam[0])
-        console.log("getRemoveParameterURL called");
-        console.log(srcurl.split("?")[0] + newParam.join(""));
-        console.log("getRemoveParameterURL end")
     }
-
-
-
-
-
-
-    // window.onload = function(e){
-    //     var param = location.search.replace("?","").split('&');
-    //     var paramData = [];
-    //     console.log(param);
-    //     param.forEach(function(e) {
-    //         if( e.indexOf('iacd' || 'fmyId' ) !== -1)
-    //         paramData.push( "&"+ e);
-
-    //     });
-
-    //     if(paramData.length < 1 ) return ;
-
-    //     paramData[0] = paramData[0].replace("&","");
-    //     paramData[0] = "?" + paramData[0];
-
-    //     // history.replaceState({}, null, location.split("?")[0] + paramData.join(''));
-    //     history.replaceState({}, null, "file:///Users/jiyeonhong/Documents/homework/GMJ-filter/index-2.html?iaCd=CDCT0101&fmyId=261" + query);
-    // }
-
-
-
-    
-    // window.onload = function(e){
-    //     var param = location.search.replace("?","").split('&');
-    //     var paramData = [];
-    //     console.log(param);
-    //     param.forEach(function(e) {
-    //     if( e.indexOf('iacd') !== -1)
-    //         {
-    //             paramData.push( "&"+ e);
-    //         }
-    //         if(e.indexOf('fmyId') !== -1)
-    //         {
-    //             paramData.push("&"+ e)
-    //         }
-    //     });
-
-    //     if(paramData.length > 1 )
-    //     {
-    //         paramData[0] = paramData[0].replace("&","");
-    //         paramData[0] = "?" + paramData[0];
-
-    //         var query = "";
-    //         paramData.forEach( function(e) {
-    //             query += e;
-    //         });
-
-    //         console.log(query);
-    //         console.log(window.location.href);
-    //         // history.replaceState({}, null, location.split("?")[0] + query);
-    //         history.replaceState({}, null, "file:///Users/jiyeonhong/Documents/homework/GMJ-filter/index-2.html?iaCd=CDCT0101&fmyId=261" + query);
-    //     }
-    // }
-
-
-
-    // window.onkeydown = function() {
-    //     var kcode = event.keyCode;
-    //     console.log(kcode)
-    //     if(kcode == 116) {
-    //         history.replaceState({}, null, location.pathname);
-    //     }
-    //     console.log("****")
-    // }
-
-
-    
-    // window.addEventListener('beforeunload', (event) => {
-    //     history.pushState(null, null, location.pathname);
-    //     event.returnValue = '';
-    // });
-
-
-
-
-    // window.onbeforeunload = function() {
-    //     console.log("&&&&&&&&&&&&&")
-    //     // console.log("")
-    //     history.pushState(null, null, urlLink);
-        
-    // }
-    // window.onkeydown = function() {
-    //     var kcode = event.keyCode;
-    //     if(kcode == 116) {
-    //     history.replaceState({}, null, urlLink);
-    //     }
-    // }
-    
 
 
     // 첫번째 버튼 생성
@@ -1045,8 +906,6 @@
 
         for(let i = 0; i < product.relPrdList.length; i++) {
             const prdname = product.relPrdList[i].prdName;
-            // console.log(prdname);
-            // console.group();
             const li = document.createElement("li");
             const input = document.createElement("input");
             const label = document.createElement("label");
@@ -1279,7 +1138,6 @@
         let currentModelSmall = this.dataset.roleId;
         const product = myArr.response.resultData.modelList;
         const carrierInfo = document.querySelector('.my-store span');
-        console.log(currentModelSmall)
 
         for(let i = 0; i < product.length; i++) {
             const product = myArr.response.resultData.modelList;
