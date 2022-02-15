@@ -2,4 +2,6 @@
 index-final.html : 제출용 최종
 index-2.html : 이것도 최종인데 console 값 및 설명 포함
 
-
+[동작 방법]
+index-final.html 파일 열고 뒤에 파라미터 붙여주고 버튼 클릭
+index-final.html?iaCd=CDCT0101&fmyId=261
